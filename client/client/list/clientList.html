@@ -1,0 +1,87 @@
+<template name="clientList">
+    <div class="page-header">
+        <h1>
+            Список клиентов
+        </h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="clearfix">
+                <div class="pull-right tableTools-container"></div>
+            </div>
+            <div>
+                <table id="dynamic-table" class="table table-striped table-bordered table-hover">
+                    <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Телефон</th>
+                        <th class="hidden-480">E-mail</th>
+
+                        <th>
+                            <i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
+                            Сайт
+                        </th>
+                        <th class="hidden-480">Лояльность</th>
+
+                        <th></th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                        {{#each clientList}}
+                            {{ >clientListItem }}
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+            <div class="space-8"></div>
+            <a href="{{pathFor 'clientAdd'}}" class="btn btn-primary">
+                <i class="ace-icon fa fa-user align-top bigger-140"></i>
+                Добавить карточку клиента
+            </a>
+        </div>
+    </div>
+</template>
+
+<template name="clientListItem">
+    <tr>
+        <td>
+            <a href="{{pathFor 'clientCard' _id=this._id}}">{{ name }}</a>
+        </td>
+        <td>{{ phone }}</td>
+        <td class="hidden-480">{{ email }}</td>
+        <td>{{ url }}</td>
+
+        <td class="hidden-480 center">
+            <div class="pull-right easy-pie-chart percentage" data-size="27" data-color="#ECCB71" data-percent="{{ loyalty }}">
+                <span class="percent">{{ loyalty }}</span>%
+            </div>
+        </td>
+
+        <td>
+            <div class="hidden-sm hidden-xs action-buttons">
+                <a class="blue" href="#">
+                    <i class="ace-icon fa fa-search-plus bigger-130"></i>
+                </a>
+            </div>
+
+            <div class="hidden-md hidden-lg">
+                <div class="inline pos-rel">
+                    <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
+                        <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                        <li>
+                            <a href="#" class="tooltip-info" data-rel="tooltip" title="View">
+                                <span class="blue">
+                                    <i class="ace-icon fa fa-search-plus bigger-120"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </td>
+        </tr>
+</template>

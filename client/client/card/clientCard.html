@@ -1,0 +1,184 @@
+<template name="clientCard">
+    <div class="col-xs-12">
+        <div>
+            <div id="user-profile-1" class="user-profile row">
+                <div class="col-xs-12 col-sm-9">
+                    <div class="profile-user-info profile-user-info-striped">
+                        {{#with client}}
+                        <div class="profile-info-row">
+                            <div class="profile-info-name">Название компании</div>
+
+                            <div class="profile-info-value">
+                                <span class="editable" id="username">{{ name }}</span>
+                            </div>
+                        </div>
+
+                        <div class="profile-info-row">
+                            <div class="profile-info-name">Тип компании</div>
+
+                            <div class="profile-info-value">
+                                <span class="editable" id="age">{{ type }}</span>
+                            </div>
+                        </div>
+
+                        <div class="profile-info-row">
+                            <div class="profile-info-name">Телефон</div>
+
+                            <div class="profile-info-value">
+                                <span class="editable" id="signup">{{ phone }}</span>
+                            </div>
+                        </div>
+
+                        <div class="profile-info-row">
+                            <div class="profile-info-name">E-mail</div>
+
+                            <div class="profile-info-value">
+                                <span class="editable" id="login">{{ email }}</span>
+                            </div>
+                        </div>
+
+                        <div class="profile-info-row">
+                            <div class="profile-info-name">Сайт</div>
+
+                            <div class="profile-info-value">
+                                <span class="editable" id="about">{{ url }}</span>
+                            </div>
+                        </div>
+                        {{/with}}
+                    </div>
+
+                    <div class="space-20"></div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                        <div class="widget-box">
+                            <div class="widget-header">
+                                <h4 class="widget-title lighter smaller">
+                                    <i class="ace-icon fa fa-rss blue"></i>
+                                    События с клиента
+                                </h4>
+                            </div>
+
+                            <div class="widget-body">
+                                <div class="widget-main no-padding">
+                                    <div id="clientCardEventList">
+                                        <div class="space-10"></div>
+
+                                        {{! Эта ul`ка - спец-хак-поебня. Спасибо метеору, пламенный привет! }}
+                                        <ul class="interfaceItems">
+                                            {{#each clientCardEventItems}}
+                                                {{>clientCardEvent}}
+                                            {{/each}}
+                                        </ul>
+
+                                    </div>
+                                    <form>
+                                        <div class="form-actions">
+                                            <div class="input-group">
+                                                <span class="input-group-addon no-padding no-border">
+                                                    <i id="speechButton" class="ace-icon fa fa-microphone-slash btn btn-sm"></i>
+                                                </span>
+                                                <input placeholder="Введите сообщение" type="text" class="form-control" id="clientCardEventAddMessage" />
+                                                <span class="input-group-btn">
+                                                    <button id="clientCardEventAdd" class="btn btn-sm btn-info no-radius" type="button">
+                                                        <i class="ace-icon fa fa-share"></i>
+                                                        Отправить
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="widget-box">
+                            <div class="widget-header">
+                                <h4 class="widget-title lighter smaller">
+                                    <i class="ace-icon fa fa-bullhorn blue"></i>
+                                    Добавить новое
+                                </h4>
+                            </div>
+
+                            <div class="widget-body" style="height: 357px;">
+                                <div class="widget-main no-padding">
+                                    <div class="tabbable">
+                                        <ul class="nav nav-tabs" id="myTab">
+                                            <li class="active">
+                                                <a data-toggle="tab" href="#clientCardEventPhone">
+                                                    <i class="green ace-icon fa fa-mobile bigger-120"></i>
+                                                    Звонок
+                                                </a>
+                                            </li>
+
+                                            <li class="">
+                                                <a data-toggle="tab" href="#clientCardNotice">
+                                                    <i class="red ace-icon fa fa-calendar-o bigger-120"></i>
+                                                    Напоминание
+                                                </a>
+                                            </li>
+
+                                            <li class="disabled">
+                                                <a data-toggle="tab" href="#clientCardTask">
+                                                    <i class="blue ace-icon fa fa-tasks bigger-120"></i>
+                                                    Задача
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content">
+                                            <div id="clientCardEventPhone" class="tab-pane fade in active">
+                                                <p>Данная функция в разработке</p>
+                                            </div>
+
+                                            <div id="clientCardNotice" class="tab-pane fade in">
+                                                <p>Данная функция в разработке</p>
+                                            </div>
+
+                                            <div id="clientCardTask" class="tab-pane fade in">
+                                                <p>Данная функция недоступна</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="clientCardEvent">
+    <div class="itemdiv dialogdiv">
+        <div class="user">
+            <img alt="" src="/avatars/avatar1.png" />
+        </div>
+
+        <div class="body">
+            <div class="time">
+                <i class="ace-icon fa fa-clock-o"></i>
+                <span class="green">{{ timeAgo dt 1 }}</span>
+            </div>
+
+            <div class="name">
+                {{ userProfile user_id 'name' }}
+            </div>
+            <div class="text">
+                {{> Template.dynamic template=clientCardEventDynamicTemplate}}
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="clientCardEvent_clientAdd">
+    <i class="blue">Создал карточку компании</i>
+</template>
+
+<template name="clientCardEvent_clientComment">
+    {{ data.text }}
+</template>
