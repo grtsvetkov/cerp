@@ -14,6 +14,7 @@
                     <thead>
                     <tr>
                         <th>Название</th>
+                        <th>Статус</th>
                         <th>Телефон</th>
                         <th class="hidden-480">E-mail</th>
 
@@ -29,7 +30,7 @@
 
                     <tbody>
                         {{#each clientList}}
-                            {{ >clientListItem }}
+                            {{>clientListItem}}
                         {{/each}}
                     </tbody>
                 </table>
@@ -45,27 +46,28 @@
 
 <template name="clientListItem">
     <tr>
-        <td>
+        <td class="align-middle">
             <a href="{{pathFor 'clientCard' _id=this._id}}">{{ name }}</a>
         </td>
-        <td>{{ phone }}</td>
-        <td class="hidden-480">{{ email }}</td>
-        <td>{{ url }}</td>
+        <td class="align-middle">{{ status }}</td>
+        <td class="align-middle">{{ phone }}</td>
+        <td class="hidden-480 align-middle">{{ email }}</td>
+        <td class="align-middle">{{ url }}</td>
 
-        <td class="hidden-480 center">
-            <div class="pull-right easy-pie-chart percentage" data-size="27" data-color="#ECCB71" data-percent="{{ loyalty }}">
-                <span class="percent">{{ loyalty }}</span>%
+        <td class="hidden-480 center col-sm-1 align-middle">
+            <div class="easy-pie-chart percentage" data-size="30" data-color="#ECCB71" data-percent="{{ loyalty }}">
+                <span class="percent">{{ loyalty }}</span>
             </div>
         </td>
 
-        <td>
+        <td class="align-middle">
             <div class="hidden-sm hidden-xs action-buttons">
                 <a class="blue" href="#">
                     <i class="ace-icon fa fa-search-plus bigger-130"></i>
                 </a>
             </div>
 
-            <div class="hidden-md hidden-lg">
+            <div class="hidden-md hidden-lg middle">
                 <div class="inline pos-rel">
                     <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
                         <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>

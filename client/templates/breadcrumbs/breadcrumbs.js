@@ -1,6 +1,9 @@
 var breadCrumbsList = {
     'clientAdd' : [
         {name: 'clientList', text: 'Список клиентов'}
+    ],
+    'clientCard': [
+        {name: 'clientList', text: 'Список клиентов'}
     ]
 };
 

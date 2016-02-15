@@ -1,14 +1,32 @@
 Template.login.events({
 
-    'click #login-button': function(event, template) {
-        template.$('#login-form').submit();
+    'click #loginButton': function(event, template) {
+        template.$('#loginForm').submit();
     },
 
-    'submit #login-form': function(event, template) {
+    'keydown #loginLogin, paste #loginLogin, change #loginLogin': function (e, tpl) {
+        var code = e.keyCode || e.which;
+        if (code == 13) {
+            e.preventDefault();
+            $(tpl.$('#loginForm')).submit();
+            return false;
+        }
+    },
+
+    'keydown #loginPassword, paste #loginPassword, change #loginPassword': function (e, tpl) {
+        var code = e.keyCode || e.which;
+        if (code == 13) {
+            e.preventDefault();
+            tpl.$('#loginForm').submit();
+            return false;
+        }
+    },
+
+    'submit #loginForm': function(event, template) {
         event.preventDefault();
 
-        var login = event.target['login-login'].value;
-        var password = event.target['login-password'].value;
+        var login = event.target['loginLogin'].value;
+        var password = event.target['loginPassword'].value;
 
         if(login == 0 || password == 0) {
             return;
@@ -17,10 +35,12 @@ Template.login.events({
         Meteor.loginWithPassword(login, password, function (error, result) {
             if (error) {
                 console.log(error);
-                //throw new Meteor.Error(error.error, 'Неправильная пара e-mail - пароль! Авторизоваться не удалось. Проверьте раскладку клавиатуры, не нажата ли клавиша "Caps Lock" и попробуйте ввести Вашу почту и пароль еще раз')
+
             } else {
                 Router.go('/');
             }
         });
+
+        return false;
     }
 });

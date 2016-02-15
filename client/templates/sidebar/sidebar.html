@@ -1,10 +1,10 @@
 <template name="sidebar">
-    <div id="sidebar" class="sidebar responsive" data-sidebar="true" data-sidebar-scroll="true" data-sidebar-hover="true">
+    <div id="sidebar" class="sidebar responsive">
         <script type="text/javascript">
-            try {
+            /*try {
                 ace.settings.check('sidebar', 'fixed')
             } catch (e) {
-            }
+            }*/
         </script>
 
         <!--div class="sidebar-shortcuts" id="sidebar-shortcuts">
@@ -37,21 +37,22 @@
             </div>
         </div--><!-- /.sidebar-shortcuts -->
 
+
         <ul id="sidebar_menu_list" class="nav nav-list">
             {{#each menuItem }}
-                {{ >sidebarMenuListItem }}
+                {{>sidebarMenuListItem}}
             {{/each}}
         </ul>
 
-        <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+        <!--div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
             <i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
-        </div>
+        </div-->
 
         <script type="text/javascript">
-            try {
+            /*try {
                 ace.settings.check('sidebar', 'collapsed')
             } catch (e) {
-            }
+            }*/
         </script>
     </div>
 </template>

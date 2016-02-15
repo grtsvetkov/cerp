@@ -3,7 +3,7 @@ if (Meteor.isClient) {
     Router.configure({
         //notFoundTemplate: '404',
         layoutTemplate: 'AppLayout',
-        //loadingTemplate: 'loading',
+        loadingTemplate: 'Loading',
         controller: 'ApplicationController'
     });
 
