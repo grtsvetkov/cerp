@@ -11,7 +11,6 @@ Template.clientAdd.rendered = function () {
             }
         }));
 
-
         $('[data-rel=tooltip]').tooltip({container: 'body'}); //Подсказки
 
         $('textarea[class*=autosize]').autosize({append: "\n"}); //Авторазмер текстового поля
@@ -152,7 +151,8 @@ Template.clientAdd.events({
             phone: paramObj.add_client_phone,
             email: paramObj.add_client_email,
             url: paramObj.add_client_url,
-            loyalty: paramObj.add_client_loyalty
+            loyalty: paramObj.add_client_loyalty,
+            description: paramObj.add_client_description
         };
 
         //Вызываем функцию добавления клиента

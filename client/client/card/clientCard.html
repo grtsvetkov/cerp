@@ -5,45 +5,12 @@
                 <div class="col-xs-12 col-sm-9">
                     <div class="profile-user-info profile-user-info-striped">
                         {{#with client}}
-                        <div class="profile-info-row">
-                            <div class="profile-info-name">Название компании</div>
-
-                            <div class="profile-info-value">
-                                <span class="editable" id="username">{{ name }}</span>
-                            </div>
-                        </div>
-
-                        <div class="profile-info-row">
-                            <div class="profile-info-name">Тип компании</div>
-
-                            <div class="profile-info-value">
-                                <span class="editable" id="age">{{ type }}</span>
-                            </div>
-                        </div>
-
-                        <div class="profile-info-row">
-                            <div class="profile-info-name">Телефон</div>
-
-                            <div class="profile-info-value">
-                                <span class="editable" id="signup">{{ phone }}</span>
-                            </div>
-                        </div>
-
-                        <div class="profile-info-row">
-                            <div class="profile-info-name">E-mail</div>
-
-                            <div class="profile-info-value">
-                                <span class="editable" id="login">{{ email }}</span>
-                            </div>
-                        </div>
-
-                        <div class="profile-info-row">
-                            <div class="profile-info-name">Сайт</div>
-
-                            <div class="profile-info-value">
-                                <span class="editable" id="about">{{ url }}</span>
-                            </div>
-                        </div>
+                            {{>clientCardInput value=name id="name" name="Название компании" ico="fa-eye" type="text" required="1"}}
+                            {{>clientCardInput value=type id="type" name="Тип компании" ico="fa-balance-scale" type="select" required="1" source="{'Юридическое лицо': 'Юридическое лицо', 'Физическое лицо': 'Физическое лицо'}"}}
+                            {{>clientCardInput value=phone id="phone" name="Телефон" ico="fa-phone" type="text" required="1"}}
+                            {{>clientCardInput value=email id="email" name="E-mail" ico="fa-envelope-o" type="email" required="1"}}
+                            {{>clientCardInput value=url id="url" name="Сайт" ico="fa-globe" type="url" required="1"}}
+                            {{>clientCardInput value=description id="description" name="Описание" ico="fa-file-text" type="textarea" required="1"}}
                         {{/with}}
                     </div>
 
@@ -106,9 +73,9 @@
                                     <div class="tabbable">
                                         <ul class="nav nav-tabs" id="myTab">
                                             <li class="active">
-                                                <a data-toggle="tab" href="#clientCardEventPhone">
-                                                    <i class="green ace-icon fa fa-mobile bigger-120"></i>
-                                                    Звонок
+                                                <a data-toggle="tab" href="#clientCardAddEvent">
+                                                    <i class="green ace-icon fa fa-rss bigger-120"></i>
+                                                    Событие
                                                 </a>
                                             </li>
 
@@ -128,9 +95,83 @@
                                         </ul>
 
                                         <div class="tab-content">
-                                            <div id="clientCardEventPhone" class="tab-pane fade in active">
-                                                <p>Данная функция в разработке</p>
-                                            </div>
+                                            <form id="clientCardAddEvent" class="tab-pane fade in active">
+
+                                                <div class="col-xs-12 col-sm-4">
+                                                    <label class="control-label no-padding-right" for="clientCardAddEventDate">Дата</label>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-11 no-padding-left">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                    <i class="ace-icon fa fa-calendar"></i>
+                                                                </span>
+                                                                <input type="text" class="col-xs-10 date-picker" id="clientCardAddEventDate" name="clientCardAddEventDate"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-4">
+                                                    <label class="control-label no-padding-right" for="clientCardAddEventTime">Время</label>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-8 no-padding-left">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                    <i class="ace-icon fa fa-calendar"></i>
+                                                                </span>
+                                                                <input type="text" class="col-xs-10 date-picker" id="clientCardAddEventTime" name="clientCardAddEventTime"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-xs-12 col-sm-6 clearfix">
+                                                    <div class="space-8"></div>
+                                                    <label class="control-label no-padding-right" for="clientCardAddEventStatus">Текущий статус</label>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-9 no-padding-left">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                    <i class="ace-icon fa fa-briefcase"></i>
+                                                                </span>
+                                                                <select class="col-xs-12" id="clientCardAddEventStatus" name="clientCardAddEventStatus">
+                                                                    {{#each clientCardAddEventStatuses}}
+                                                                        <option value="{{name}}" selected="{{selected}}">{{name}}</option>
+                                                                    {{/each}}
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-12 clearfix">
+                                                    <div class="space-8"></div>
+                                                    <label class="control-label no-padding-right" for="clientCardAddEventComment">Комментарий</label>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-12 no-padding-left">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                    <i class="ace-icon fa fa-comment"></i>
+                                                                </span>
+                                                                <textarea placeholder="Напишите комментарий к событию" class="col-xs-10 col-sm-11" id="clientCardAddEventComment" name="clientCardAddEventComment"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-xs-12 clearfix col-md-offset-4">
+                                                    <div class="space-7"></div>
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-sm btn-success no-radius" id="clientCardAddEventButton">
+                                                            <i class="ace-icon fa fa-rss-square"></i>
+                                                            Добавить событие
+                                                        </button>
+                                                    </span>
+                                                </div>
+
+
+                                            </form>
 
                                             <div id="clientCardNotice" class="tab-pane fade in">
                                                 <p>Данная функция в разработке</p>
@@ -149,6 +190,18 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</template>
+
+<template name="clientCardInput">
+    <div class="profile-info-row">
+        <div class="profile-info-name">
+            {{name}}
+            <i class="ace-icon fa {{ico}}"></i>
+        </div>
+        <div class="profile-info-value">
+            <span class="editable" id="clientCardInputEdit_{{id}}" data-inputclass="clientCardInputClass_{{id}}" data-type="{{type}}" data-name="{{id}}" data-required="{{required}}" data-emptytext="Не указано" data-value="{{ value }}" data-source="{{source}}"></span>
         </div>
     </div>
 </template>
@@ -179,6 +232,23 @@
     <i class="blue">Создал карточку компании</i>
 </template>
 
+<template name="clientCardEvent_clientEdit">
+    <i class="blue">Изменил информацию о клиенте. </i>
+    {{#each data.row}}
+        <strong>"{{name}}":</strong>
+        <p>{{new}}</p>
+        <small><i>Было: </i>{{old}}</small>
+    {{/each}}
+</template>
+
 <template name="clientCardEvent_clientComment">
     {{ data.text }}
+</template>
+
+<template name="clientCardEvent_clientEvent">
+    <i class="green">Новое событие клиента:</i>
+    {{#unless eq data.new_status data.old_status}}
+        <p>Статус компании: <strong>{{data.new_status}}</strong><br/><small><i>Было: </i>{{data.old_status}}</small></p>
+    {{/unless}}
+        <p>Комментарий:<br/>{{data.comment}}</p>
 </template>
