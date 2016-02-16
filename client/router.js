@@ -69,7 +69,7 @@ if (Meteor.isClient) {
             return [
                 Meteor.subscribe('client', this.params._id),
                 Meteor.subscribe('clientEvent', this.params._id),
-                Meteor.subscribe('usersPublic')
+                Meteor.subscribe('usersPublic'),
             ];
         }
     });

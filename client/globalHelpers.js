@@ -34,3 +34,8 @@ Template.registerHelper('eqq', function(op1, op2){
 Template.registerHelper('not', function(op){
     return !op;
 });
+
+Template.registerHelper('filesize', function(size){
+    var i = Math.floor( Math.log(size) / Math.log(1024) );
+    return ( size / Math.pow(1024, i) ).toFixed(2) * 1 + ' ' + ['B', 'kB', 'MB', 'GB', 'TB'][i];
+});

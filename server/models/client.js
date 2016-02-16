@@ -59,8 +59,6 @@ ClientModel = {
     addEvent: function(_id, data) {
 
 
-        console.log(data);
-
         var old_client = Client.findOne(_id);
 
         if(!old_client) {
@@ -83,7 +81,11 @@ ClientModel = {
             }
         };
 
-        EventModel.add(eventData);
+        if(data.file) {
+            eventData.data.file = data.file;
+        }
+
+        return EventModel.add(eventData);
     }
 };
 

@@ -24,3 +24,6 @@ iron:router
 matteodem:server-session
 aldeed:collection2
 accounts-password
+cfs:standard-packages
+cfs:filesystem
+cfs:graphicsmagick

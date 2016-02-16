@@ -84,6 +84,22 @@ Template.clientCard.rendered = function () {
         });
 
         /**
+         * Добавить файл к событию
+         */
+        $('#clientCardAddEventFile').ace_file_input({
+            no_file:'Не выбран файл ...',
+            btn_choose:'Выбрать',
+            btn_change:'Изменить',
+            droppable:false,
+            onchange:null,
+            thumbnail:false //| true | large
+            //whitelist:'gif|png|jpg|jpeg'
+            //blacklist:'exe|php'
+            //onchange:''
+            //
+        });
+
+        /**
          * Редактируемые поля
          */
         $.fn.editable.defaults.mode = 'inline';
@@ -167,6 +183,8 @@ Template.clientCard.helpers({
     }
 });
 
+var clientEventAddFile;
+
 Template.clientCard.events({
 
     /**
@@ -210,7 +228,6 @@ Template.clientCard.events({
 
         var form = $(tpl.find('#clientCardAddEvent'));
 
-
         var paramObj = {};
         $.each(form.serializeArray(), function(_, kv) {
             paramObj[kv.name] = kv.value;
@@ -221,10 +238,35 @@ Template.clientCard.events({
         var data = {
             date: moment(paramObj.clientCardAddEventDate + ' ' + paramObj.clientCardAddEventTime, 'DD.MM.YYYY HH:mm').valueOf(),
             comment: paramObj.clientCardAddEventComment,
-            status: paramObj.clientCardAddEventStatus,
+            status: paramObj.clientCardAddEventStatus
         };
 
-        Meteor.call('client.addEvent', _id, data);
+        if(clientEventAddFile) {
+            FileCollections['event'].insert(clientEventAddFile, function(err, fObj){
+
+                var blob = _.clone(fObj.data.blob);
+
+                data.file = {
+                    _id: fObj._id,
+                    name: blob.name,
+                    url: 'event'+'/'+fObj._id+'/'+blob.name,
+                    type: blob.type,
+                    size: blob.size
+                };
+
+                Meteor.call('client.addEvent', _id, data);
+                clientEventAddFile = null;
+                $(tpl.find('#clientCardAddEventFile')).ace_file_input('reset_input');
+            });
+        } else {
+            Meteor.call('client.addEvent', _id, data);
+        }
+    },
+
+    'change #clientCardAddEventFile': function(e, tpl) {
+        FS.Utility.eachFile(e, function(file) {
+            clientEventAddFile = file;
+        });
     }
 
 });

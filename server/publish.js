@@ -15,4 +15,8 @@ Meteor.startup(function() {
     Meteor.publish('clientEvent', function (_id) {
         return Event.find({'data.client_id':_id});
     }); //События клиента
+
+    Meteor.publish('eventFile', function () {
+        return FileCollections['event'].find();
+    });
 });
