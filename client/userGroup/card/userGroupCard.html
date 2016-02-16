@@ -1,0 +1,29 @@
+<template name="userGroupCard">
+    <div class="col-xs-12">
+        <div>
+            <div id="userGroup-profile-1" class="userGroup-profile row">
+                <div class="col-xs-12 col-sm-9">
+                    <div class="profile-userGroup-info profile-userGroup-info-striped">
+                        {{#with userGroup}}
+                            {{>userGroupCardInput value=name id="name" name="Название группы" ico="fa-eye" type="text" required="1"}}
+                        {{/with}}
+                    </div>
+
+                    <div class="space-20"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="userGroupCardInput">
+    <div class="profile-info-row">
+        <div class="profile-info-name">
+            {{name}}
+            <i class="ace-icon fa {{ico}}"></i>
+        </div>
+        <div class="profile-info-value">
+            <span class="editable" id="userGroupCardInputEdit_{{id}}" data-inputclass="userGroupCardInputClass_{{id}}" data-type="{{type}}" data-name="{{id}}" data-required="{{required}}" data-emptytext="Не указано" data-value="{{ value }}" data-source="{{source}}"></span>
+        </div>
+    </div>
+</template>

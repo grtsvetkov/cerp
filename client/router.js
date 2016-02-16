@@ -38,11 +38,20 @@ if (Meteor.isClient) {
     });
 
 
+    /**
+     * Главная страница
+     */
+
     Router.route('/', {
         name: 'index',
         bodyClass: 'no-skin',
         menuName: 'Главная'
     });
+
+
+    /**
+     * Клиенты
+     */
 
     Router.route('/client/add', {
         name: 'clientAdd',
@@ -69,10 +78,82 @@ if (Meteor.isClient) {
             return [
                 Meteor.subscribe('client', this.params._id),
                 Meteor.subscribe('clientEvent', this.params._id),
-                Meteor.subscribe('usersPublic'),
+                Meteor.subscribe('usersPublic')
             ];
         }
     });
+
+
+    /**
+     * Пользователи
+     */
+
+    Router.route('/user/add', {
+        name: 'userAdd',
+        bodyClass: 'no-skin',
+        menuName: 'Добавить пользователя'
+    });
+
+    Router.route('/user/list', {
+        name: 'userList',
+        bodyClass: 'no-skin',
+        menuName: 'Список пользователей',
+        waitOn: function(){
+            return [
+                Meteor.subscribe('usersAdmin')
+            ];
+        }
+    });
+
+    Router.route('/user/card/:_id', {
+        name: 'userCard',
+        bodyClass: 'no-skin',
+        menuName: 'Карточка пользователя',
+        waitOn: function(){
+            return [
+                Meteor.subscribe('usersAdmin')
+            ];
+        }
+    });
+
+
+    /**
+     * Группы пользователей
+     */
+
+    Router.route('/userGroup/add', {
+        name: 'userAdd',
+        bodyClass: 'no-skin',
+        menuName: 'Добавить группу пользователей'
+    });
+
+    Router.route('/userGroup/list', {
+        name: 'userList',
+        bodyClass: 'no-skin',
+        menuName: 'Список групп пользователей',
+        waitOn: function(){
+            return [
+                Meteor.subscribe('userGroupList')
+            ];
+        }
+    });
+
+    Router.route('/userGroup/card/:_id', {
+        name: 'userCard',
+        bodyClass: 'no-skin',
+        menuName: 'Карточка группы пользователей',
+        waitOn: function(){
+            return [
+                Meteor.subscribe('userGroup', this.params._id)
+            ];
+        }
+    });
+
+
+
+    /**
+     * Авторизация
+     */
 
     Router.route('/login', {
         layoutTemplate: 'loginLayout',

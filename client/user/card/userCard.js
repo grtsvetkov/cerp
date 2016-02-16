@@ -6,12 +6,12 @@ var speechButton, speechRec = false, speechFinal = '', speechInput, recognition;
 /**
  * Рендер страницы
  */
-Template.clientCard.rendered = function () {
+Template.userCard.rendered = function () {
 
     jQuery(function ($) {
 
         speechButton = $('#speechButton');
-        speechInput = $('#clientCardEventAddMessage');
+        speechInput = $('#userCardEventAddMessage');
 
         if (!('webkitSpeechRecognition' in window)) { // проверяем поддержку speach api
             speechButton.hide();
@@ -86,7 +86,7 @@ Template.clientCard.rendered = function () {
         /**
          * Добавить файл к событию
          */
-        $('#clientCardAddEventFile').ace_file_input({
+        $('#userCardAddEventFile').ace_file_input({
             no_file:'Не выбран файл ...',
             btn_choose:'Выбрать',
             btn_change:'Изменить',
@@ -112,7 +112,7 @@ Template.clientCard.rendered = function () {
                 var _id = Router.current().params._id;
                 var data = {};
                 data[$(this).attr('data-name')] = newValue;
-                Meteor.call('client.update', _id, data);
+                Meteor.call('user.update', _id, data);
             },
             validate: function (value) {
 
@@ -125,14 +125,14 @@ Template.clientCard.rendered = function () {
         /**
          * Маска ввода для телефона
          */
-        $(document).on('focus', '.clientCardInputClass_phone', function () {
+        $(document).on('focus', '.userCardInputClass_phone', function () {
             $(this).mask('+7 (999) 999-99-99');
         });
 
         /**
          * Календарик в блоке добавления события
          */
-        $('#clientCardAddEventDate').datepicker({
+        $('#userCardAddEventDate').datepicker({
             dateFormat: 'dd.mm.yy',
             monthNames: ['Январь', 'Февраль', 'Март', 'Апрель',
                 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь',
@@ -146,7 +146,7 @@ Template.clientCard.rendered = function () {
         /**
          * Вывод времени в поле добавления события
          */
-        $('#clientCardAddEventTime').timepicker({
+        $('#userCardAddEventTime').timepicker({
             minuteStep: 10,
             showSeconds: false,
             showMeridian: false
@@ -156,45 +156,45 @@ Template.clientCard.rendered = function () {
         /**
          * Красивый скролл в блоке списка событий
          */
-        $('#clientCardEventList').ace_scroll({
+        $('#userCardEventList').ace_scroll({
             size: 300
         });
 
-        $('#clientCardEventList .scroll-content').scrollTop(99999999);
+        $('#userCardEventList .scroll-content').scrollTop(99999999);
     });
 };
 
-Template.clientCard.helpers({
-    'client': function () { //Возвращаем данные по клиенту
-        return Client.findOne();
+Template.userCard.helpers({
+    'user': function () { //Возвращаем данные по клиенту
+        return user.findOne();
     },
 
-    'clientCardEventItems': function () { //Возвращаем события по клиенту
+    'userCardEventItems': function () { //Возвращаем события по клиенту
         return Event.find({},{sort: {dt: 1}});
     },
 
-    'clientCardAddEventStatuses': function () { //Возвращаем возможные статусы для клиента
+    'userCardAddEventStatuses': function () { //Возвращаем возможные статусы для клиента
         var result = [];
-        var client = Client.findOne();
-        for (var i in client_status) {
-            result.push({name: client_status[i], selected: client_status[i] == client.status ? 'selected' : ''});
+        var user = user.findOne();
+        for (var i in user_status) {
+            result.push({name: user_status[i], selected: user_status[i] == user.status ? 'selected' : ''});
         }
         return result;
     }
 });
 
-var clientEventAddFile;
+var userEventAddFile;
 
-Template.clientCard.events({
+Template.userCard.events({
 
     /**
      * Кнопка "отправить" (блок события)
      */
-    'keydown #clientCardEventAddMessage, paste #clientCardEventAddMessage, change #clientCardEventAddMessage': function (e, tpl) {
+    'keydown #userCardEventAddMessage, paste #userCardEventAddMessage, change #userCardEventAddMessage': function (e, tpl) {
         var code = e.keyCode || e.which;
         if (code == 13) {
             e.preventDefault();
-            tpl.find('#clientCardEventAdd').click();
+            tpl.find('#userCardEventAdd').click();
             return false;
         }
     },
@@ -202,31 +202,31 @@ Template.clientCard.events({
     /**
      * Поле ввода сообщения (блок события)
      */
-    'click #clientCardEventAdd': function (e, tpl) {
+    'click #userCardEventAdd': function (e, tpl) {
 
-        var text = tpl.find('#clientCardEventAddMessage').value;
+        var text = tpl.find('#userCardEventAddMessage').value;
 
         if (!text) {
             return false;
         }
 
         Meteor.call('event.add', { //data
-            type: 'clientComment',
+            type: 'userComment',
             data: {
-                client_id: Router.current().params._id,
+                user_id: Router.current().params._id,
                 text: text
             }
         }, function (e, data) {
-            tpl.find('#clientCardEventAddMessage').value = '';
+            tpl.find('#userCardEventAddMessage').value = '';
         });
     },
 
     /**
      * Кнопка "добавить новое событие"
      */
-    'click #clientCardAddEventButton': function (e, tpl) {
+    'click #userCardAddEventButton': function (e, tpl) {
 
-        var form = $(tpl.find('#clientCardAddEvent'));
+        var form = $(tpl.find('#userCardAddEvent'));
 
         var paramObj = {};
         $.each(form.serializeArray(), function(_, kv) {
@@ -236,12 +236,12 @@ Template.clientCard.events({
         var _id = Router.current().params._id;
 
         var data = {
-            comment: paramObj.clientCardAddEventComment,
-            status: paramObj.clientCardAddEventStatus
+            comment: paramObj.userCardAddEventComment,
+            status: paramObj.userCardAddEventStatus
         };
 
-        if(clientEventAddFile) {
-            FileCollections['event'].insert(clientEventAddFile, function(err, fObj){
+        if(userEventAddFile) {
+            FileCollections['event'].insert(userEventAddFile, function(err, fObj){
 
                 var blob = _.clone(fObj.data.blob);
 
@@ -253,18 +253,18 @@ Template.clientCard.events({
                     size: blob.size
                 };
 
-                Meteor.call('client.addEvent', _id, data);
-                clientEventAddFile = null;
-                $(tpl.find('#clientCardAddEventFile')).ace_file_input('reset_input');
+                Meteor.call('user.addEvent', _id, data);
+                userEventAddFile = null;
+                $(tpl.find('#userCardAddEventFile')).ace_file_input('reset_input');
             });
         } else {
-            Meteor.call('client.addEvent', _id, data);
+            Meteor.call('user.addEvent', _id, data);
         }
     },
 
-    'change #clientCardAddEventFile': function(e, tpl) {
+    'change #userCardAddEventFile': function(e, tpl) {
         FS.Utility.eachFile(e, function(file) {
-            clientEventAddFile = file;
+            userEventAddFile = file;
         });
     }
 
@@ -273,15 +273,6 @@ Template.clientCard.events({
 /**
  * Ренедер элемента из списка событий
  */
-Template.clientCardEvent.rendered = function () {
-    $('#clientCardEventList .scroll-content').scrollTop(99999999);
+Template.userCardEvent.rendered = function () {
+    $('#userCardEventList .scroll-content').scrollTop(99999999);
 };
-
-/**
- * Динамическая подгрузка шаблона в зависимости от типа события
- */
-Template.clientCardEvent.helpers({
-    'clientCardEventDynamicTemplate': function () {
-        return 'clientCardEvent_' + this.type;
-    }
-});

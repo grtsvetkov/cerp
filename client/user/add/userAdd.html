@@ -1,0 +1,127 @@
+<template name="userAdd">
+    <div class="page-header">
+        <h1>
+            Добавить нового пользователя
+        </h1>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <form class="form-horizontal" role="form" id="add_user_form">
+
+                {{! Название компании}}
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="add_user_name">Название компании</label>
+
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="ace-icon fa fa-eye"></i>
+                            </span>
+                            <input type="text" placeholder="Название компании" class="col-xs-10 col-sm-5" id="add_user_name" name="add_user_name"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-4"></div>
+
+                {{! Телефон}}
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="add_user_phone">Телефон</label>
+
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="ace-icon fa fa-phone"></i>
+                            </span>
+                            <input type="text" placeholder="+7 (999) 999-99-99" class="input-sm input-mask-phone" id="add_user_phone" name="add_user_phone" />
+                        </div>
+                    </div>
+                </div>
+                <div class="space-4"></div>
+
+                {{! Электронный адрес}}
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="add_user_email">Электронный адрес</label>
+
+                    <div class="col-sm-9">
+                        <div class="clearfix input-group">
+                            <span class="input-group-addon">
+                                <i class="ace-icon fa fa-envelope-o"></i>
+                            </span>
+                            <input type="text" placeholder="Электронный адрес (e-mail)" class="col-xs-10 col-sm-5" id="add_user_email" name="add_user_email" />
+                        </div>
+                    </div>
+                </div>
+                <div class="space-4"></div>
+
+                {{! Адрес сайта}}
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="add_user_url">Адрес сайта</label>
+
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="ace-icon fa fa-globe"></i>
+                            </span>
+                            <input type="text" placeholder="Адрес сайта (URL)" class="col-xs-10 col-sm-5" id="add_user_url" name="add_user_url"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-4"></div>
+
+                {{! Лояльность клиента}}
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="add_user_loyalty">Лояльность клиента</label>
+
+                    <div class="col-xs-6">
+                        <div class="knob-container inline">
+                            <input data-rel="tooltip" title="Лояльность компании по отношению к нашей (в процентах)" type="text" id="add_user_loyalty" name="add_user_loyalty" class="input-small knob" value="50" data-min="0" data-max="100" data-width="100" data-height="100" data-thickness=".2" data-fgcolor="#87B87F" data-displayprevious="true" data-anglearc="250" data-angleoffset="-125" />
+                        </div>
+                    </div>
+                </div>
+                <div class="space-4"></div>
+
+                {{! Описание компании}}
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="add_user_description">Описание</label>
+
+                    <div class="col-sm-9">
+                        <textarea placeholder="Описание компании" class="col-xs-10 col-sm-5" id="add_user_description" name="add_user_description"></textarea>
+                    </div>
+                </div>
+                <div class="space-4"></div>
+
+                <div class="clearfix form-actions">
+                    <div class="col-md-offset-3 col-md-9">
+
+                        <button id="add_user_reset_confirm" class="btn" type="button">
+                            <i class="ace-icon fa fa-undo bigger-110"></i>
+                            Сбросить
+                        </button>
+                        
+                       &#160;&#160;&#160;
+
+                        <button id="add_user_submit" class="btn btn-info" type="button">
+                            <i class="ace-icon fa fa-check bigger-110"></i>
+                            Создать карточку клиента
+                        </button>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        {{! Подтверждение "вы действительно хотите сбросить форму?" }}
+        <div id="add_user_reset_confirm_dialog" class="hide">
+            <div class="alert alert-info bigger-110">
+                Все введённые данные будут сброшены!
+            </div>
+            <div class="space-6"></div>
+            <p class="bigger-110 bolder center grey">
+                <i class="ace-icon fa fa-hand-o-right blue bigger-120"></i>
+                Вы уверены?
+            </p>
+        </div>
+
+    </div>
+</template>

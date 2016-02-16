@@ -1,16 +1,16 @@
-<template name="clientCard">
+<template name="userCard">
     <div class="col-xs-12">
         <div>
             <div id="user-profile-1" class="user-profile row">
                 <div class="col-xs-12 col-sm-9">
                     <div class="profile-user-info profile-user-info-striped">
-                        {{#with client}}
-                            {{>clientCardInput value=name id="name" name="Название компании" ico="fa-eye" type="text" required="1"}}
-                            {{>clientCardInput value=type id="type" name="Тип компании" ico="fa-balance-scale" type="select" required="1" source="{'Юридическое лицо': 'Юридическое лицо', 'Физическое лицо': 'Физическое лицо'}"}}
-                            {{>clientCardInput value=phone id="phone" name="Телефон" ico="fa-phone" type="text" required="1"}}
-                            {{>clientCardInput value=email id="email" name="E-mail" ico="fa-envelope-o" type="email" required="1"}}
-                            {{>clientCardInput value=url id="url" name="Сайт" ico="fa-globe" type="url" required="1"}}
-                            {{>clientCardInput value=description id="description" name="Описание" ico="fa-file-text" type="textarea" required="1"}}
+                        {{#with user}}
+                            {{>userCardInput value=name id="name" name="Название компании" ico="fa-eye" type="text" required="1"}}
+                            {{>userCardInput value=type id="type" name="Тип компании" ico="fa-balance-scale" type="select" required="1" source="{'Юридическое лицо': 'Юридическое лицо', 'Физическое лицо': 'Физическое лицо'}"}}
+                            {{>userCardInput value=phone id="phone" name="Телефон" ico="fa-phone" type="text" required="1"}}
+                            {{>userCardInput value=email id="email" name="E-mail" ico="fa-envelope-o" type="email" required="1"}}
+                            {{>userCardInput value=url id="url" name="Сайт" ico="fa-globe" type="url" required="1"}}
+                            {{>userCardInput value=description id="description" name="Описание" ico="fa-file-text" type="textarea" required="1"}}
                         {{/with}}
                     </div>
 
@@ -27,13 +27,13 @@
 
                             <div class="widget-body">
                                 <div class="widget-main no-padding">
-                                    <div id="clientCardEventList">
+                                    <div id="userCardEventList">
                                         <div class="space-10"></div>
 
                                         {{! Эта ul`ка - спец-хак-поебня. Спасибо метеору, пламенный привет! }}
                                         <ul class="interfaceItems">
-                                            {{#each clientCardEventItems}}
-                                                {{>clientCardEvent}}
+                                            {{#each userCardEventItems}}
+                                                {{>userCardEvent}}
                                             {{/each}}
                                         </ul>
 
@@ -44,9 +44,9 @@
                                                 <span class="input-group-addon no-padding no-border">
                                                     <i id="speechButton" class="ace-icon fa fa-microphone-slash btn btn-sm"></i>
                                                 </span>
-                                                <input placeholder="Введите сообщение" type="text" class="form-control" id="clientCardEventAddMessage" />
+                                                <input placeholder="Введите сообщение" type="text" class="form-control" id="userCardEventAddMessage" />
                                                 <span class="input-group-btn">
-                                                    <button id="clientCardEventAdd" class="btn btn-sm btn-info no-radius" type="button">
+                                                    <button id="userCardEventAdd" class="btn btn-sm btn-info no-radius" type="button">
                                                         <i class="ace-icon fa fa-share"></i>
                                                         Отправить
                                                     </button>
@@ -73,21 +73,21 @@
                                     <div class="tabbable">
                                         <ul class="nav nav-tabs" id="myTab">
                                             <li class="active">
-                                                <a data-toggle="tab" href="#clientCardAddEvent">
+                                                <a data-toggle="tab" href="#userCardAddEvent">
                                                     <i class="green ace-icon fa fa-rss bigger-120"></i>
                                                     Событие
                                                 </a>
                                             </li>
 
                                             <li class="">
-                                                <a data-toggle="tab" href="#clientCardNotice">
+                                                <a data-toggle="tab" href="#userCardNotice">
                                                     <i class="red ace-icon fa fa-calendar-o bigger-120"></i>
                                                     Напоминание
                                                 </a>
                                             </li>
 
                                             <li class="disabled">
-                                                <a data-toggle="tab" href="#clientCardTask">
+                                                <a data-toggle="tab" href="#userCardTask">
                                                     <i class="blue ace-icon fa fa-tasks bigger-120"></i>
                                                     Задача
                                                 </a>
@@ -95,18 +95,18 @@
                                         </ul>
 
                                         <div class="tab-content">
-                                            <form id="clientCardAddEvent" class="tab-pane fade in active" enctype="multipart/form-data">
+                                            <form id="userCardAddEvent" class="tab-pane fade in active" enctype="multipart/form-data">
                                                 <div class="col-xs-12 col-sm-6">
                                                     <div class="space-8"></div>
-                                                    <label class="control-label no-padding-right" for="clientCardAddEventStatus">Текущий статус</label>
+                                                    <label class="control-label no-padding-right" for="userCardAddEventStatus">Текущий статус</label>
                                                     <div class="form-group">
                                                         <div class="col-sm-9 no-padding-left">
                                                             <div class="input-group">
                                                                 <span class="input-group-addon">
                                                                     <i class="ace-icon fa fa-briefcase"></i>
                                                                 </span>
-                                                                <select class="col-xs-12" id="clientCardAddEventStatus" name="clientCardAddEventStatus">
-                                                                    {{#each clientCardAddEventStatuses}}
+                                                                <select class="col-xs-12" id="userCardAddEventStatus" name="userCardAddEventStatus">
+                                                                    {{#each userCardAddEventStatuses}}
                                                                         <option value="{{name}}" {{selected}}>{{name}}</option>
                                                                     {{/each}}
                                                                 </select>
@@ -116,24 +116,24 @@
                                                 </div>
                                                 <div class="col-xs-12 col-sm-6">
                                                     <div class="space-8"></div>
-                                                    <label class="control-label no-padding-right" for="clientCardAddEventFile">Добавить файл</label>
+                                                    <label class="control-label no-padding-right" for="userCardAddEventFile">Добавить файл</label>
                                                     <div class="form-group">
                                                         <div class="col-xs-12 no-padding-left">
-                                                            <input type="file" id="clientCardAddEventFile" />
+                                                            <input type="file" id="userCardAddEventFile" />
                                                         </div>
                                                     </div>
                                                 </div>
 
                                                 <div class="col-xs-12 clearfix">
                                                     <div class="space-8"></div>
-                                                    <label class="control-label no-padding-right" for="clientCardAddEventComment">Комментарий</label>
+                                                    <label class="control-label no-padding-right" for="userCardAddEventComment">Комментарий</label>
                                                     <div class="form-group">
                                                         <div class="col-sm-12 no-padding-left">
                                                             <div class="input-group">
                                                                 <span class="input-group-addon">
                                                                     <i class="ace-icon fa fa-comment"></i>
                                                                 </span>
-                                                                <textarea placeholder="Напишите комментарий к событию" class="col-xs-10 col-sm-11" id="clientCardAddEventComment" name="clientCardAddEventComment"></textarea>
+                                                                <textarea placeholder="Напишите комментарий к событию" class="col-xs-10 col-sm-11" id="userCardAddEventComment" name="userCardAddEventComment"></textarea>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -142,7 +142,7 @@
                                                 <div class="col-xs-12 clearfix col-md-offset-4">
                                                     <div class="space-4"></div>
                                                     <span class="input-group-btn">
-                                                        <button type="button" class="btn btn-sm btn-success no-radius" id="clientCardAddEventButton">
+                                                        <button type="button" class="btn btn-sm btn-success no-radius" id="userCardAddEventButton">
                                                             <i class="ace-icon fa fa-rss-square"></i>
                                                             Добавить событие
                                                         </button>
@@ -152,11 +152,11 @@
 
                                             </form>
 
-                                            <div id="clientCardNotice" class="tab-pane fade in">
+                                            <div id="userCardNotice" class="tab-pane fade in">
                                                 <p>Данная функция в разработке</p>
                                             </div>
 
-                                            <div id="clientCardTask" class="tab-pane fade in">
+                                            <div id="userCardTask" class="tab-pane fade in">
                                                 <p>Данная функция недоступна</p>
                                             </div>
 
@@ -173,19 +173,19 @@
     </div>
 </template>
 
-<template name="clientCardInput">
+<template name="userCardInput">
     <div class="profile-info-row">
         <div class="profile-info-name">
             {{name}}
             <i class="ace-icon fa {{ico}}"></i>
         </div>
         <div class="profile-info-value">
-            <span class="editable" id="clientCardInputEdit_{{id}}" data-inputclass="clientCardInputClass_{{id}}" data-type="{{type}}" data-name="{{id}}" data-required="{{required}}" data-emptytext="Не указано" data-value="{{ value }}" data-source="{{source}}"></span>
+            <span class="editable" id="userCardInputEdit_{{id}}" data-inputclass="userCardInputClass_{{id}}" data-type="{{type}}" data-name="{{id}}" data-required="{{required}}" data-emptytext="Не указано" data-value="{{ value }}" data-source="{{source}}"></span>
         </div>
     </div>
 </template>
 
-<template name="clientCardEvent">
+<template name="userCardEvent">
     <div class="itemdiv dialogdiv">
         <div class="user">
             <img alt="" src="/avatars/avatar1.png" />
@@ -201,7 +201,7 @@
                 {{ userProfile user_id 'name' }}
             </div>
             <div class="text">
-                {{> Template.dynamic template=clientCardEventDynamicTemplate}}
+                {{> Template.dynamic template=userCardEventDynamicTemplate}}
                 {{#if data.file}}
                     <p>Добавлен файл:<br/>
                     <a href="/cfs/files/{{data.file.url}}" target="_blank">{{data.file.name}}</a>&#160;<small>{{filesize data.file.size}}</small></p>
@@ -211,11 +211,11 @@
     </div>
 </template>
 
-<template name="clientCardEvent_clientAdd">
+<template name="userCardEvent_userAdd">
     <i class="blue">Создал карточку компании</i>
 </template>
 
-<template name="clientCardEvent_clientEdit">
+<template name="userCardEvent_userEdit">
     <i class="blue">Изменил информацию о клиенте. </i>
     {{#each data.row}}
         <strong>"{{name}}":</strong>
@@ -224,11 +224,11 @@
     {{/each}}
 </template>
 
-<template name="clientCardEvent_clientComment">
+<template name="userCardEvent_userComment">
     {{ data.text }}
 </template>
 
-<template name="clientCardEvent_clientEvent">
+<template name="userCardEvent_userEvent">
     <i class="green">Новое событие клиента:</i>
     {{#unless eq data.new_status data.old_status}}
         <p>Статус компании: <strong>{{data.new_status}}</strong><br/><small><i>Было: </i>{{data.old_status}}</small></p>
