@@ -53,7 +53,7 @@ Template.userList.rendered = function () {
                     bAutoWidth: false,
                     "aoColumns": [
                         //{"bSortable": false},
-                        null, null, null, null, null, null,
+                        null, null, null, null,
                         {"bSortable": false}
                     ],
                     "aaSorting": [],
@@ -210,7 +210,13 @@ Template.userList.rendered = function () {
 
 Template.userList.helpers({
     'userList': function() {
-        return  user.find().fetch();
+        var users = Meteor.users.find().fetch();
+        _.each(users, function(u){
+            u.email = u.emails[0].address;
+            u.profile.group = UserGroup.findOne(u.profile.group).name;
+        });
+
+        return users;
     }
 });
 

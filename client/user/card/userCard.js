@@ -166,7 +166,7 @@ Template.userCard.rendered = function () {
 
 Template.userCard.helpers({
     'user': function () { //Возвращаем данные по клиенту
-        return user.findOne();
+        return Meteor.users.findOne();
     },
 
     'userCardEventItems': function () { //Возвращаем события по клиенту

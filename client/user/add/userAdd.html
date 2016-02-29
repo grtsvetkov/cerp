@@ -9,16 +9,16 @@
         <div class="col-xs-12">
             <form class="form-horizontal" role="form" id="add_user_form">
 
-                {{! Название компании}}
+                {{! Имя пользователя}}
                 <div class="form-group">
-                    <label class="col-sm-3 control-label no-padding-right" for="add_user_name">Название компании</label>
+                    <label class="col-sm-3 control-label no-padding-right" for="add_user_name">Имя пользователя</label>
 
                     <div class="col-sm-9">
                         <div class="input-group">
                             <span class="input-group-addon">
                                 <i class="ace-icon fa fa-eye"></i>
                             </span>
-                            <input type="text" placeholder="Название компании" class="col-xs-10 col-sm-5" id="add_user_name" name="add_user_name"/>
+                            <input type="text" placeholder="Имя пользователя" class="col-xs-10 col-sm-5" id="add_user_name" name="add_user_name"/>
                         </div>
                     </div>
                 </div>
@@ -54,39 +54,36 @@
                 </div>
                 <div class="space-4"></div>
 
-                {{! Адрес сайта}}
+                {{! Пароль}}
                 <div class="form-group">
-                    <label class="col-sm-3 control-label no-padding-right" for="add_user_url">Адрес сайта</label>
+                    <label class="col-sm-3 control-label no-padding-right" for="add_user_password">Пароль</label>
 
                     <div class="col-sm-9">
                         <div class="input-group">
                             <span class="input-group-addon">
-                                <i class="ace-icon fa fa-globe"></i>
+                                <i class="ace-icon fa fa-unlock-alt"></i>
                             </span>
-                            <input type="text" placeholder="Адрес сайта (URL)" class="col-xs-10 col-sm-5" id="add_user_url" name="add_user_url"/>
+                            <input type="password" placeholder="Пароль" class="col-xs-10 col-sm-5" id="add_user_password" name="add_user_password"/>
                         </div>
                     </div>
                 </div>
                 <div class="space-4"></div>
 
-                {{! Лояльность клиента}}
+                {{! Группа}}
                 <div class="form-group">
-                    <label class="col-sm-3 control-label no-padding-right" for="add_user_loyalty">Лояльность клиента</label>
-
-                    <div class="col-xs-6">
-                        <div class="knob-container inline">
-                            <input data-rel="tooltip" title="Лояльность компании по отношению к нашей (в процентах)" type="text" id="add_user_loyalty" name="add_user_loyalty" class="input-small knob" value="50" data-min="0" data-max="100" data-width="100" data-height="100" data-thickness=".2" data-fgcolor="#87B87F" data-displayprevious="true" data-anglearc="250" data-angleoffset="-125" />
-                        </div>
-                    </div>
-                </div>
-                <div class="space-4"></div>
-
-                {{! Описание компании}}
-                <div class="form-group">
-                    <label class="col-sm-3 control-label no-padding-right" for="add_user_description">Описание</label>
+                    <label class="col-sm-3 control-label no-padding-right" for="add_user_group">Группа</label>
 
                     <div class="col-sm-9">
-                        <textarea placeholder="Описание компании" class="col-xs-10 col-sm-5" id="add_user_description" name="add_user_description"></textarea>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="ace-icon fa fa-users"></i>
+                            </span>
+                            <select class="col-xs-10 col-sm-5" id="add_user_group" name="add_user_group">
+                                {{#each userGroup}}
+                                    <option value="{{_id}}">{{name}}</option>
+                                {{/each}}
+                            </select>
+                        </div>
                     </div>
                 </div>
                 <div class="space-4"></div>
