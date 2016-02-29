@@ -91,7 +91,12 @@ if (Meteor.isClient) {
     Router.route('/user/add', {
         name: 'userAdd',
         bodyClass: 'no-skin',
-        menuName: 'Добавить пользователя'
+        menuName: 'Добавить пользователя',
+        waitOn: function(){
+            return [
+                Meteor.subscribe('userGroupList')
+            ];
+        }
     });
 
     Router.route('/user/list', {
@@ -100,6 +105,7 @@ if (Meteor.isClient) {
         menuName: 'Список пользователей',
         waitOn: function(){
             return [
+                Meteor.subscribe('userGroupList'),
                 Meteor.subscribe('usersAdmin')
             ];
         }
@@ -122,13 +128,13 @@ if (Meteor.isClient) {
      */
 
     Router.route('/userGroup/add', {
-        name: 'userAdd',
+        name: 'userGroupAdd',
         bodyClass: 'no-skin',
         menuName: 'Добавить группу пользователей'
     });
 
     Router.route('/userGroup/list', {
-        name: 'userList',
+        name: 'userGroupList',
         bodyClass: 'no-skin',
         menuName: 'Список групп пользователей',
         waitOn: function(){
@@ -139,7 +145,7 @@ if (Meteor.isClient) {
     });
 
     Router.route('/userGroup/card/:_id', {
-        name: 'userCard',
+        name: 'userGroupCard',
         bodyClass: 'no-skin',
         menuName: 'Карточка группы пользователей',
         waitOn: function(){
@@ -156,8 +162,8 @@ if (Meteor.isClient) {
      */
 
     Router.route('/login', {
-        layoutTemplate: 'loginLayout',
         name: 'login',
+        layoutTemplate: 'loginLayout',
         bodyClass: 'login-layout'
 
     });

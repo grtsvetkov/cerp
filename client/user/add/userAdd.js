@@ -13,24 +13,10 @@ Template.userAdd.rendered = function () {
 
         $('[data-rel=tooltip]').tooltip({container: 'body'}); //Подсказки
 
-        $('textarea[class*=autosize]').autosize({append: "\n"}); //Авторазмер текстового поля
-
         $.mask.definitions['~'] = '[+-]'; //Настрока маски ввода
         $('.input-mask-phone').mask('+7 (999) 999-99-99'); //Маска ввода телефона
 
         $(".knob").knob(); //Элемент "Лояльность клиента"
-
-        jQuery.validator.addMethod('add_user_url', function (val, elem) { //Валидация введенного адреса сайта
-            if (val.length == 0) {
-                return true;
-            }
-
-            if (!/^(https?|ftp):\/\//i.test(val)) {
-                val = 'http://' + val;
-                $(elem).val(val);
-            }
-            return /^(https?|s?ftp):\/\/(((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:)*@)?(((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5]))|((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?)(:\d*)?)(\/((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*)?)?(\?((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|[\uE000-\uF8FF]|\/|\?)*)?(#((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|\/|\?)*)?$/i.test(val);
-        });
 
         $('#add_user_form').validate({ //Валидация формы
             errorElement: 'div',
@@ -42,26 +28,26 @@ Template.userAdd.rendered = function () {
                     required: true
                 },
                 'add_user_email': {
-                    required: false,
+                    required: true,
                     email: true
                 },
-                'add_user_url': {
-                    required: false,
-                    'add_user_url': true
+                'add_user_password': {
+                    required: true
                 }
             },
 
             messages: {
                 'add_user_name': {
-                    required: 'Пожалуйста, укажите полное название компании',
-                },
-
-                'add_user_url': {
-                    'add_user_url': 'Пожалуйста, введите корректный url сайта'
+                    required: 'Пожалуйста, укажите имя пользователя'
                 },
 
                 'add_user_email': {
+                    required: 'Пожалуйста, укажите полное название компании',
                     email: 'Пожалуйста, введите корректный электронный адрес (e-mail)'
+                },
+
+                'add_user_password': {
+                    required: 'Пожалуйста, укажите пароль для входа в систему'
                 }
             },
 
@@ -130,8 +116,14 @@ Template.userAdd.rendered = function () {
     });
 };
 
+Template.userAdd.helpers({
+    'userGroup': function(){
+        return UserGroup.find();
+    }
+});
+
 Template.userAdd.events({
-    'click #add_user_submit': function(e, tpl) {
+    'click #add_user_submit': function(e, tpl) { //Кнопка "Создать карточку клиента"
 
         var form = $(tpl.find('#add_user_form'));
 
@@ -146,20 +138,20 @@ Template.userAdd.events({
         });
 
         var data = {
-            name: paramObj.add_user_name,
-            phone: paramObj.add_user_phone,
             email: paramObj.add_user_email,
-            url: paramObj.add_user_url,
-            loyalty: paramObj.add_user_loyalty,
-            description: paramObj.add_user_description
+            password: paramObj.add_user_password,
+            profile: {
+                name: paramObj.add_user_name,
+                phone: paramObj.add_user_phone,
+                group: paramObj.add_user_group
+            }
         };
+
+        console.log(data);
 
         //Вызываем функцию добавления клиента
         Meteor.call('user.add', data, function(e, c) {
-            console.log(e);
-            console.log(c);
             Router.go('userCard', {_id: c});
-            //Router.go('/chat/'+c.chat_id+'/'); //редиректим его на страницу с активным чатом
         });
     }
 });
