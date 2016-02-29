@@ -166,7 +166,7 @@ Template.clientCard.rendered = function () {
 
 Template.clientCard.helpers({
     'client': function () { //Возвращаем данные по клиенту
-        return Client.findOne();
+        return Client.findOne(Router.current().params._id);
     },
 
     'clientCardEventItems': function () { //Возвращаем события по клиенту
@@ -175,7 +175,7 @@ Template.clientCard.helpers({
 
     'clientCardAddEventStatuses': function () { //Возвращаем возможные статусы для клиента
         var result = [];
-        var client = Client.findOne();
+        var client = Client.findOne(Router.current().params._id);
         for (var i in client_status) {
             result.push({name: client_status[i], selected: client_status[i] == client.status ? 'selected' : ''});
         }

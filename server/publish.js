@@ -35,12 +35,6 @@ Meteor.startup(function() {
         return Client.find({});
     }); //Клиенты
 
-    Meteor.publish('client', function (_id) {
-        return Client.find(_id);
-    }); //Клиент
-
-
-
     /**
      * EVENT
      */

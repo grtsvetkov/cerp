@@ -76,7 +76,7 @@ if (Meteor.isClient) {
         menuName: 'Карточка клиента',
         waitOn: function(){
             return [
-                Meteor.subscribe('client', this.params._id),
+                Meteor.subscribe('clientList'),
                 Meteor.subscribe('clientEvent', this.params._id),
                 Meteor.subscribe('usersPublic')
             ];
