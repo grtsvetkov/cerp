@@ -1,0 +1,962 @@
+[
+  {
+    "type": "Юридическое лицо",
+    "name": " ООО \"Энергоресурсгарант\"",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/erg-sp.narod.ru\/",
+    "description": "<p>\r\n\tг.Сергиев-Посад,ул.Симоненкова,дом 2. <\/p>\r\n<p>\r\n\t8 (496)547-50-08   <\/p>\r\n<\/br><\/br><p>\r\n\tПлохой дизайн(для пользователя не удобно читать такой текст на черном фоне и он не задержится тут на долго), отсутствует оптимизация для поисковых систем(метаданные), ограниченный функционал, отсутствие прайс листа, не привлекательное описание<\/p>\r\n<\/br><p>\r\n\tЦвет<\/p>\r\n",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Домфорт СП",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/domfortsp.ru",
+    "description": "<p>\r\n\tг. Сергиев посад, ул. Валовая, д. 29, офис 6 (2 этаж) <\/p>\r\n<p>\r\n\t 8 (496) 547 – 86 - 44, 8 (963) 660 – 44 – 89 <\/p>\r\n<\/br><\/br><p>\r\n\tПлохой дизайн(не учитывая уплывшие модули), отсутствует оптимизация для поисковых систем(метаданные), нет расположения на карте<\/p>\r\n<\/br><p>\r\n\tРасположение на карте<\/p>\r\n",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "\"TAPADERA\"",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/tapadera-sp.ru\/",
+    "description": "<p>\r\n\tг. Сергиев Посад, Новоугличское шоссе, ТЦ \"Перекресток\", д. 58 Б, 5 этаж .<\/p>\r\n<p>\r\n\t8 (496) 551-05-25,  8 (915) 042-05-25 <\/p>\r\n<\/br><\/br><p>\r\n\tСайт не доступен<\/p>\r\n<\/br><p><\/p><span style=\"line-height: 1.42857;\">Меню.<\/span><br><p><\/p>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Ветеринарная клиника ",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.veterinarsp.ru",
+    "description": "г. Хотьково, ул.Седина д.1 <div>79263506611<br><\/div><\/br><\/br>Отсутствует оптимизация для поисковых систем(склейка доменов, метаданные), текст прайс листа не оптимизирован, ограниченный функционал(мало информации не привлекает посетителя)<\/br>Прайс",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Ремонт ноутбуков",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.посадсервис.рф\/",
+    "description": "МО, г.Сергиев Посад,ул.  1-я Рыбная 30\/1<div><span style=\"line-height: 1.42857;\">+7 (496) 547-97-50 <\/span><\/div><div><span style=\"line-height: 1.42857;\">+7 (926) 555-10-10 <\/span><\/div><\/br><\/br>Плохая оптимизация для поисковых систем, ошибки на сайте, пустые разделы, страницы с кодом 404<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Служба спиливания ",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/spilivaem.ru\/",
+    "description": "<div><span style=\"line-height: 1.42857;\">+7(495)922-14-90    <\/span><br><\/div><div>+7(916)915-12-45 <\/div><\/br><\/br>В оптимизации сайта допущены ошибки, для одно страничного сайта сделан не плохо, но стоит дополнить его дополнительными разделами с текстовым описанием<\/br>Много картинок,создать галерею,мало контактных данных",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Акварель",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/студия-изо.рф",
+    "description": "Московская область, г.Сергиев Посад, пр-т Красной Армии 84\/22<div>8-916-614-07-35<br><\/div><\/br><\/br>Плохой дизайн(внешний вид сайта имеет не привлекательный вид, не удобное меню и не привлекательный текст), отсутствие оптимизации для поисковых систем, ограниченный функционал, <\/br><br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Клуб \"СЕМИЦВЕТИК\"",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/semicvetik-sp.ru",
+    "description": "<div>Московская обл., Сергиево-Посадский р-н, Сергиев Посад г.,<span style=\"line-height: 1.42857;\">ул. Воробьевская, 16а<\/span><\/div><div><span style=\"line-height: 20px;\">8-926-366-57-87,  8-926-578-03-07, 551-33-85 <\/span><br><\/div><\/br><\/br>Плохой дизайн(не привлекательный внешний вид), плохая оптимизация для поисковых систем(метаданные, отсутствие мобильной версии, страницы с кодом 404, url адреса)<\/br>Главная страница(номер тел. Заезжает на название)",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Магазин \"Кит торг\" ",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/kit-torg.ru",
+    "description": "МО, г.Сергиев Посад,ул.Глинки 8а<div>8(496) 5417827, 89262120073<br><\/div><\/br><\/br>Плохая оптимизация для поисковых систем, малое наполнение сайта<\/br>Пустой",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Торговый дом Сатурн",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/torgovyj-dom-saturn.tiu.ru\/",
+    "description": "МО,г.Сергиев Посад, Скобяное шоссе, д. 5А<div>+7903224-95-27 контактное лицо Наталья, <\/div><div>5475556, 5476981, 5479857<br><\/div><\/br><\/br>Пустой сайт без какого либо наполнения<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Центр кровли",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/centrkrovli-sp.ru\/",
+    "description": "МО, г.Сергиев Посад, ул. 1-й Ударной Армии, д.18 (2 этаж)<div><div>8 (496) 541 88 77<\/div><div>+7 903 503 55 77<\/div><div>+7 926 2 888 444<\/div><\/div><\/br><\/br>Плохой дизайн(не привлекательные внешний вид), отсутствует оптимизация для поисковых систем(метаданные, отсутствует мобильная версия, url адреса)<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Торговый дом СП",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.torgdom-sp.ru\/",
+    "description": "<div>Московская область, <span style=\"line-height: 1.42857;\">г. Сергиев Посад, <\/span><span style=\"line-height: 1.42857;\">ул. Валовая, д. 10,<\/span><\/div><div><span style=\"line-height: 20px;\">+ 7-496-5408035 телефон\/факс <\/span><br><\/div><\/br><\/br>плохой дизайн(не привлекательные внешний вид), отсутствует оптимизация для поисковых систем, малое наполнение сайта<\/br>Расположение на карте, фото галерея",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Заборы",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.zabor.sitecity.ru",
+    "description": "8-495-220-78-95, 8-903-132-78-84<\/br><\/br>Плохой дизайн, отсутствие оптимизации для поисковых систем, отсутствие наполнения сайта<\/br>Ужас! Не сайт",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Снабжаем всем",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/снабжаем-всем.рф",
+    "description": "Сергиев Посад г., ул. Фестивальная, 6а <div> 8-496-541-41-34       8-499-40-80-911 многоканальный<br><\/div><\/br><\/br>Плохой дизайн(сайт имеет не привлекательный внешний вид) пустые разделы, плохая оптимизация для поисковых систем (дубликаты описаний, отсутствие мобильной версии)<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Рыболов Охотник",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/fishohota.ru\/",
+    "description": "Московская область, г.Сергиев Посад, пр-т Красной Армии 84\/22,Ново угличское шоссе 73 (остановка ЦРБ) <br><p><strong>8 (496) 547-80-99<\/strong><\/p>\r\n<p><strong> <\/strong><\/p>\r\n<p><strong>8 (901) 553-12-86<\/strong><\/p>\r\n<p><strong> <\/strong><\/p>\r\n<p><strong>8 (495) 973-12-86<\/strong><\/p><br><br><\/br><\/br>Не оптимизирована скорость загрузки, отсутствие мобильной версии, отсутствие метаданных в разделах<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Оружейный магазин ArtGuns",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.artguns.ru\/",
+    "description": "Московская обл., г. Сергиев Посад, Вокзальная площадь, д.1<br><br><\/br><\/br>Оптимизация метаданных, отсутствие оптимизации скорости загрузки, не настроена 404 ошибка, множество внутренних ссылок<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Галерея Леже",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/lezhegallery.ru\/",
+    "description": "\r\n<table frame=\"VOID\" cols=\"1\" rules=\"NONE\" border=\"0\" cellspacing=\"0\" height=\"60\" width=\"406\">\r\n\t<colgroup><col width=\"292\"><\/colgroup>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"LEFT\" height=\"76\" width=\"292\">МО,г.Сергиев Посад, пр-т Красной Армии,д. 138\/2<br>541-46-46<br><\/td><\/tr><\/tbody><\/table><br><\/br><\/br><\/br>Не рабочий сайт<br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Магазин Авто Опт",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/autoopt-sp.ru\/",
+    "description": "\r\n<table frame=\"VOID\" cols=\"1\" rules=\"NONE\" border=\"0\" cellspacing=\"0\" height=\"103\" width=\"369\">\r\n\t<colgroup><col width=\"292\"><\/colgroup>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"LEFT\" height=\"76\" width=\"292\"><font size=\"4\" face=\"Times New Roman\">МО, г.Сергиев Посад,ул Железнодорожная д.46<br>т. +7 (496) 547 - 77 -79,   +7 (929) 613- 47 - 72 <br><\/font><\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n<\/br><\/br>Дубли метаданных, не полностью настроена ошибка 404, не оптимизирована скорость загрузки, нет мобильной версии<\/br>нет цент,не возможно связаться, страница с кодом 404",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Гильдия перевозчиков",
+    "phone": "",
+    "email": "",
+    "url": "www.autoservise.ru",
+    "description": "\r\n<table frame=\"VOID\" cols=\"1\" rules=\"NONE\" border=\"0\" cellspacing=\"0\" height=\"183\" width=\"416\">\r\n\t<colgroup><col width=\"292\"><\/colgroup>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"LEFT\" height=\"112\" width=\"292\"><font size=\"4\" face=\"Times New Roman\">МО,г.Сергиев Посад, Ярославское ш., д. 3\"б\"<br><\/font>\r\n<table frame=\"VOID\" cols=\"1\" rules=\"NONE\" border=\"0\" cellspacing=\"0\">\r\n\t<colgroup><col width=\"394\"><\/colgroup>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"LEFT\" height=\"112\" width=\"394\"><font size=\"4\" face=\"Times New Roman\">542-42-04, 547-52-00, 8916-415-33-00<\/font><\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n<br><\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n<\/br><\/br>Сайт продается<\/br>Дизайн",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Автоград",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.avtogradsp.ru",
+    "description": "\r\n<table frame=\"VOID\" cols=\"1\" rules=\"NONE\" border=\"0\" cellspacing=\"0\">\r\n\t<colgroup><col width=\"394\"><\/colgroup>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"LEFT\" height=\"76\" width=\"394\"><font size=\"4\" face=\"Times New Roman\">541-31-72, 926-280-28-68<\/font><\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n<\/br><\/br>отсутствие метаданных, не настроен файл htaccess, не полностью оптимизирована скорость загрузки, нет мобильной версии, сайт не оптимизирован для поисковых систем<\/br>Нет места расположения, скучный дизайн",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Гнездышко",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.hotelnest.ru",
+    "description": "\r\n<table frame=\"VOID\" cols=\"1\" rules=\"NONE\" border=\"0\" cellspacing=\"0\">\r\n\t<colgroup><col width=\"292\"><\/colgroup>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"LEFT\" height=\"76\" width=\"292\"><font size=\"4\" face=\"Times New Roman\">г. Сергиев Посад, ул. Вознесенская, д. 53А (привокзальная площадь)<br><\/font>\r\n<table frame=\"VOID\" cols=\"1\" rules=\"NONE\" border=\"0\" cellspacing=\"0\">\r\n\t<colgroup><col width=\"394\"><\/colgroup>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"LEFT\" height=\"76\" width=\"394\"><font size=\"4\" face=\"Times New Roman\">8-496-540-42-14<\/font><\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n<br><\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n<br><\/br><\/br>Не оптимизированы метаданные, не настроена ошибка 404, не полная настройка скорости загрузки и мобильной версии<\/br>Скучный дизайн<br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Красная горка",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.kghotel.ru",
+    "description": "\r\n<table frame=\"VOID\" cols=\"1\" rules=\"NONE\" border=\"0\" cellspacing=\"0\">\r\n\t<colgroup><col width=\"292\"><\/colgroup>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"LEFT\" height=\"76\" width=\"292\"><font size=\"4\" face=\"Times New Roman\">МО, г.Сергиев Посад, ул. Кирова,д.8-б<br><\/font>\r\n<table frame=\"VOID\" cols=\"1\" rules=\"NONE\" border=\"0\" cellspacing=\"0\">\r\n\t<colgroup><col width=\"394\"><\/colgroup>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"LEFT\" height=\"76\" width=\"394\"><font size=\"4\" face=\"Times New Roman\">541-54-45, 541-54-55<\/font><\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n<br><\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n<br><\/br><\/br>Отсутствие метаданных, не настроена ошибка 404, не оптимизирована скорость загрузки, не полная оптимизация мобильной версии<\/br><br><table frame=\"VOID\" cols=\"1\" rules=\"NONE\" border=\"0\" cellspacing=\"0\" height=\"76\" width=\"340\"><tbody><tr><td align=\"LEFT\" height=\"76\" width=\"394\"><br><\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "ИП Таланов",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.2168.ru",
+    "description": "\r\n<table frame=\"VOID\" cols=\"1\" rules=\"NONE\" border=\"0\" cellspacing=\"0\">\r\n\t<colgroup><col width=\"394\"><\/colgroup>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"LEFT\" height=\"76\" width=\"394\"><font size=\"4\" face=\"Times New Roman\">Директор Таланов Михаил Аркадьевич<br>8(916)163-29-80<\/font><\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n<\/br><\/br>Дублирование метаописаний, не оптимизирована скорость загрузки, не оптимизирована мобильная версия<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "ООО Олимп Плюс",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/олимп-бетон.рф\/",
+    "description": "\r\n<table frame=\"VOID\" cols=\"1\" rules=\"NONE\" border=\"0\" cellspacing=\"0\">\r\n\t<colgroup><col width=\"292\"><\/colgroup>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"LEFT\" height=\"76\" width=\"292\"><font size=\"4\" face=\"Times New Roman\">Московская область, г.Ивантеевка, Центральный проезд, 27<br><\/font>\r\n<table frame=\"VOID\" cols=\"1\" rules=\"NONE\" border=\"0\" cellspacing=\"0\">\r\n\t<colgroup><col width=\"394\"><\/colgroup>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"LEFT\" height=\"76\" width=\"394\"><font size=\"4\" face=\"Times New Roman\">8(495) 518-90-30<br>8(903) 728-25-73, 8(495) 728-25-73<br>8(495) 544-37-47, 8(496) 536-24-31 <\/font><\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n<br><\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n<\/br><\/br>Отсутствие метаописаний, не настроена ошибка 404, не оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "ВитаЛайм",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/виталайм.рф\/",
+    "description": "\r\n<table frame=\"VOID\" cols=\"1\" rules=\"NONE\" border=\"0\" cellspacing=\"0\">\r\n\t<colgroup><col width=\"292\"><\/colgroup>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"LEFT\" height=\"76\" width=\"292\"><font size=\"4\" face=\"Times New Roman\">г. Пушкино, Ул. Институтская, д.12 <br><\/font>\r\n<table frame=\"VOID\" cols=\"1\" rules=\"NONE\" border=\"0\" cellspacing=\"0\">\r\n\t<colgroup><col width=\"394\"><\/colgroup>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"LEFT\" height=\"76\" width=\"394\"><font size=\"4\" face=\"Times New Roman\">8496-533-77-33, 8909-999-55-38<\/font><\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n<br><\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n<\/br><\/br>Отсутствие метаданных, страницы с ошибкой 404, не оптимизирована скорость загрузки, &nbsp;нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Бизнес проспект",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.prospektk.ru",
+    "description": "<\/br><\/br>Ошибки в метаданных(дублирование и отсутствие метаданных), не настроена ошибка 404, не оптимизирована скорость загрузки, нет мобильной версии<\/br>Ошибка в контактной информацции<br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Сити моторс",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/cimotors.ru\/",
+    "description": "9262849459 Александр<br><\/br><\/br>Дублирование метаданных, ошибка с кодом 500, не полностью настроена ошибка 404, не оптимизирована скорость загрузкисайта<\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "ООО \"Эко Дом\"",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/ecko-dom.blizko.ru\/",
+    "description": "<ul class=\"contacts\"><li class=\"phone-\">\r\n<span class=\"number-\">+7 (495) 955-78-00<\/span>\r\n\r\n<\/li><li class=\"phone-\">\r\n<span class=\"number-\">+7 (967) 160-00-61<\/span>\r\n\r\n<\/li><li class=\"phone-\">\r\n<span class=\"number-\">+7 (985) 776-46-20 г.Мытищи<br><\/span><\/li><\/ul><\/br><\/br><\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Климат сервис",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/climatecar.ru\/",
+    "description": "г.Мытищи ул.Коминтерна 13<br>8(909)159-09-74, 8(925)033-76-30<br><\/br><\/br>Дублирование метаданных, страница с ошибкой 500, не настроена 404 ошибка, не оптимизирована скорость загрузки, страницы с пустыми заголовками h1<\/br>Плохой дизайн(не привлекательные внешний вид), не удобный для читания шрифт<br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Коробки",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/bricol.ru\/",
+    "description": "Московская обл., г. Ивантеевка, ул.Толмачева, 49<br>+7(905)563-36-39<br><\/br><\/br>Не полностью настроена 404 ошибка, не оптимизирована скорость загрузки, не полная настройка мобильной версии, не настроен файл htaccess<\/br>нет меню<br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "ООО \"ЧОП\" Бимаз",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.bimaz.ru\/",
+    "description": "М.О., г. Щелково, ул. Краснознаменская, д. 15<br>(496) 56-2-97-77<br><\/br><\/br>Отсутствие метаданных, не оптимизирована скорость загрузки, не полная настройка мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Антиквариат,подарки,сувениры",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/antik-s.com\/",
+    "description": "г. Сергиев Посад,пр-т Красной Армии 156\/1<br>8926-825-47-47<br>551-74-33<br><\/br><\/br>Пустой сайт, возможно находится в разработке<\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "АвтоДом",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/avtodomsp.ru\/",
+    "description": "С-П р-н,д.Глинково,77, тел. 549-97-41, 541-81-92, 910-438-32-34<br><\/br><\/br>Отсутствие метаданных, нет мобильной версии, не настроена 404 ошибка, не оптимизирована скорость загрузки<\/br><br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Конс-Аудит",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/kons-audit.ru",
+    "description": "Красноармейск,ул.Лермонтова 2,оф.15<br>тел.(495)-972-96-56,(495)978-85-79,(496)523-54-90<\/br><\/br>домен истекает через 1 день, отсутствие мобильной версии, отсутствие метаданных<\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "X-GROUP CORPORATION",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/оспариваниекадастровой.рф",
+    "description": "8 (495) 222-89-58<\/br><\/br>не оптимизированы метаданные, не настроена 404 ошибка, не оптимизирована скорость загрузки, множество ошибок в коде<br><\/br>Ужасный дизайн",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Нарисуй-ка",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/narisui-ka.ru",
+    "description": "<p align=\"left\">г. Мытищи, ул. Семашко 10 корп.1 <br>\r\n                        подъезд 3  \r\n                      <\/p>т. 8-916-289-11-19 <\/br><\/br>Отсутствие метаданных, не настроено сжатие, не настроена 404 ошибка, отсутствие дизайна<\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Корпорация малышей",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/babys-club.ru\/",
+    "description": "8(495)743-46-03<\/br><\/br><\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Ника",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/zubnika.ru",
+    "description": "г.Королев,ул.Мичурина,21а<br>тел. 8903-598-09-07<br>8498-600-47-91<br><\/br><\/br>Не оптимизированы  метаданных, не настроена 404 ошибка, не настроен файл htaccess<\/br>Нет отзыва,сертификатов,специалистов.<br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "ООО Вариант",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/med-variant.ru\/",
+    "description": " г.Мытищи, ул.Академика Каргина,д.34,<br>тел. 8(495)586-65-25,  8(495)586-03-36<\/br><\/br>Отсутствуют и дублируются метаописания<div>не оптимизирована скорость загрузки<\/div><div>множество ошибок в коде<\/div><div>наличие страниц с ошибкой 404, не настроен ответ на ошибку 404<\/div><\/br>Нет отзыва,сертификатов,специалистов.",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Sweet Orange",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/sweetorange.ru\/",
+    "description": "г.Пушкино, ул.Дзержинец, 14а,<br>тел. 8(496)532-29-41,<br>8(962)962-00-07<br><\/br><\/br>Сайт ничего не имеет<\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Делика Дент",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/delicadent.ru\/",
+    "description": " Московская область, г. Щелково, ул. Свирская, д. 14, офис 12 (2-й этаж)<br><p><strong>Городской номер:<\/strong> 8(499) 704-78-88<\/p><p><strong>Мобильный номер:<\/strong> 8(925) 893-48-25<\/p><br><\/br><\/br><ul><li><span style=\"line-height: 1.42857;\">наличие фильтра АГС яндекс (яндекс выкидывает страницы из поисковой системы и не индексирует их больше)<\/span><br><\/li><li><span style=\"line-height: 1.42857;\">плохая оптимизация метаданных<\/span><br><\/li><li><span style=\"line-height: 1.42857;\">наличие ошибок с кодом 404 и 503<\/span><br><\/li><li><span style=\"line-height: 1.42857;\">не полная оптимизация мобильной версии<\/span><br><\/li><\/ul><\/br>Пустой сайт<br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "ЗАО Геострой АК",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/ak-geostroy.ru",
+    "description": "Юридический адрес: 141342, Московская обл., Сергиево-Посадский р-н, пос. Богородское, 11 квартал МЭЗ, д.1\r\n<p>Фактический адрес: тот же.<br> e-mail: <a href=\"mailto:akgeostr@mail.ru\">akgeostr@mail.ru<\/a><br> тел\/факс: (496)545-34-86<br> бухгалтерия: (496)545-34-40<br> диспетчерская: (496)545-34-37<\/p><\/br><\/br>Не правильно прописаны метаданные, не настроена ошибка 404, не оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Моя парикмахерская",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/моя-парикмахерская.рф\/",
+    "description": "г.Сергиев-Посад:<br>\r\nТЦ \"Маяк\" ул.1-я Рыбная, д.19\/22 <br>\r\nтелефон для предварительной записи к мастерам:\r\n<br>+7-916-722-55-56\r\n<br><br>\r\nТЦ \"Торговые Ряды\" ул.1-ой Ударной Армии, д.12 <br>\r\nтелефон для предварительной записи к мастерам:<br>\r\n+7-919-100-18-12\r\n<\/br><\/br>Отсутствие и дублирование метаданных, не настроен файл htaccess, не настроена скорость загрузки, не настроена мобильная версия<\/br>Не интересно<br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Авто кресла",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/auto-kresla.ucoz.ru\/",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосква\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон:<\/div>\r\n\t\t\t<div class=\"right\">+7 (925) 809-55-11<\/div><\/br><\/br>Отсустсвие и дублирование метаданных, ошибка с кодом 503, ошибки в коде, не оптимизирована скорость загрузки, не оптимизирована мобильная версия<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Дети в машине и дома",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/detimd.ru\/",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосковская обл., Химки г., ул. Панфилова, 3\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон:<\/div>\r\n\t\t\t<div class=\"right\">+7 (495) 978-14-29<\/div><\/br><\/br>Страницы с дублированным описанием, множество ошибок кода, большое количество внутренних ссылок, не настроена ошибка 404, не оптимизирована скорость загрузки, нет мобильной версии<\/br>не удачный дизайн<br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Автошкола Гарантия",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/avtoshkola-garantia.ru\/",
+    "description": "г.Сергиев Посад, пр-т Красной Армии, д.212в<br>тел. 8(496)547-05-57<br><\/br><\/br>Отсутствие метаданных, дублирование заголовков h1(и большое количество, должен быть всего 1 заголовок h1 на страницу), ошибки в коде, не оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Триумф Климат",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.triumf-klimat.ru\/",
+    "description": "<span style=\"font-size: medium; color: #000000;\">Москва, ул. Краснобогатырская, д. 2, стр. 2<br>т<\/span><span style=\"font-size: medium; color: #000000;\">ел\/факс: 8 (495) 665 60 23, 8 (495) 961-42-74<\/span><br><span style=\"font-size: medium; color: #000000;\">моб.: 8 (903) 670-38-05<\/span><\/br><\/br>Отсутствие метаданных, не оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "АвтоКлимат",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/auto-klimate.ru",
+    "description": "<span class=\"fs21 cf1\">г.Москва ул.Енисейская д.43а<\/span><div><span style=\"line-height: 28px;\"><span class=\"fs21 cf1\">тел.<\/span> <span class=\"fs24 cf2\">+7 916 578 52 18<\/span><\/span><\/div><\/br><\/br>Отсутствие метаданных, не оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Автосервис",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.mosvag.ru",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосква, Кронштадтский бул., 35б\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон:<\/div>\r\n\t\t\t<div class=\"right\">+7 (495) 788-83-45<\/div><\/br><\/br>Отсутствуют метаданные, ошибка 404, ошибка 404 настроена не полностью, не оптимизирована скорость, не сделана мобильная версия<\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "БМП",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/bmpauto.ru\/",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосковская обл., Щелковский р-н, Назимиха дер., Фряновское ш., 3\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон:<\/div>\r\n\t\t\t<div class=\"right\">+7 (926) 270-72-72<\/div><\/br><\/br>Множество заголовков h1, не полностью настроена 404 ошибка, не оптимизирована скорость загрузки, отсутствие мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "ООО Висма",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.visma0007.ru",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t127247, \r\n\t\t\t\tМосква, Дмитровское ш., 107, стр. 5\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон:<\/div>\r\n\t\t\t<div class=\"right\">+7 (495) 485-65-36<\/div><\/br><\/br>наличие страниц с ошибкой 404, не оптимизирован для мобильных телефонов, отсутствие и дублирование метаописаний<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Гудвин",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/goodwin-sp.ru",
+    "description": "+7 (903) 00-88-2-77<\/br><\/br>404 ошибка, нет описаний на страницах, не оптимизирована скорость загрузки, отсутствие мобильной версии<\/br>Не все заполнено по продукции (шлакбаумы,автоматические ворота)<br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Романтик",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/romantiksp.narod.ru",
+    "description": "г.Сергиев Посад,ул.Железнодорожная,42<br>тел.8(496)541-30-51<br><\/br><\/br>Дублирование и отсутствие метаописаний, страницы с кодом 404, не оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Окна Мастер",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.oknamaster-sp.ru",
+    "description": "<span style=\"font-size:12pt;\">г.Сергиев Посад,ул.Матросова,д.8<br>тел. 547-71-22, 8985-163-77-97<br><\/span><\/br><\/br>Отсутствие метаданных, ошибки в коде, не оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "ДокаМед",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/дока-мед.рф",
+    "description": "<p>Адрес: Сергиев Посад, ул. Шлякова, 4.<\/p>\r\n<p>Телефоны: 8 (926) 841-82-03, 8 (496) 541-82-03.<\/p><\/br><\/br>не оптимизирована скорость, нет мобильной версии, мало слов на главной станице<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Ваше здоровье",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/мц-вашездоровье.рф",
+    "description": "г.Хотьково, Черняховского,2<br>тел.543-20-25<br><\/br><\/br>Отсутствие метаданных, не настроена ошибка 404, не полностью оптимизирована скорость <\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Леро-Мед",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.lero-med.ru\/",
+    "description": "г.Хотьково, ул.Заводская,1<br>тел. 549-30-45<br>работают: понедельник, среда,пятница.<br><\/br><\/br>Обнаружен фильтр яндекса, отсутствие метаданных, не настроена ошибка 404, наличие ошибок 404, не оптимизирована скорость загрузки, нет мобильной версии <\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Александра",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.aleksandra-sp.ru",
+    "description": "г.Сергиев Посад,ул.Валовая,29,оф.9<br>тел.551-01-13, 905-573-57-54<br><\/br><\/br>Отсутствие метаданных, ошибки в коде, не полностью настроена ошибка 404, не оптимизирована скорость загрузки<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Бегемотик",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/begemotik-sp.ru\/",
+    "description": "<div><span style=\"font-family:'pt sans';\">г. Сергиев Посад, пр-т Красной Армии, д. 218б<br><\/span><span style=\"font-family:'pt sans';\">Тел.\/факс<strong><u>:<\/u> <\/strong>+7 (985) 111-79-92<\/span><br><\/div><\/br><\/br>Отсутствие метаданных, не оптимизирована скорость загрузки, нет мобильной версии, не полностью настроена ошибка 404<\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Ветер надежд",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/veternadegd.ru\/",
+    "description": "г.Сергиев Посад, пр-т Красной Армии,52а<br>542-45-52, 926-542-45-52<br><\/br><\/br>Отсутствие метаданных, не оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Компания жизнь",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/companilife-sp.ru\/",
+    "description": "г.Сергиев Посад, ул.Воробьевская,18<br>тел. 547-64-80<br><\/br><\/br>Отсутствие метаданных, ошибки в коде, не оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Парус +",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.parusposad.ru\/",
+    "description": "<span style=\"font-family: 'Times New Roman'; font-size: 20px; text-align: -webkit-center;\">г.Сергиев Посад, пр-т Красной Армии,д. 138\/2, 2й этаж <\/span><em style=\"font-family: 'Times New Roman'; font-size: 20px; text-align: -webkit-center;\"><br><\/em><span style=\"font-family: 'Times New Roman'; font-size: 20px; text-align: -webkit-center;\"> <\/span><span style=\"font-family: 'Times New Roman'; font-size: 20px; text-align: -webkit-center;\">тел. 547-69-13<\/span><br style=\"font-family: 'Times New Roman'; font-size: 20px; text-align: -webkit-center;\"><span style=\"font-family: 'Times New Roman'; font-size: 20px; text-align: -webkit-center;\"> <\/span><span style=\"font-family: 'Times New Roman'; font-size: 20px; text-align: -webkit-center;\">547-69-14<\/span><span style=\"font-family: 'Times New Roman'; font-size: 20px; text-align: -webkit-center;\"> <\/span><br style=\"font-family: 'Times New Roman'; font-size: 20px; text-align: -webkit-center;\"><span style=\"font-family: 'Times New Roman'; font-size: 20px; text-align: -webkit-center;\"><\/span><span style=\"font-family: 'Times New Roman'; font-size: 20px; text-align: -webkit-center;\">8(495)7<\/span><span style=\"font-family: 'Times New Roman'; font-size: 20px; text-align: -webkit-center;\"><\/span><span style=\"font-family: 'Times New Roman'; font-size: 20px; text-align: -webkit-center;\">86-27-03<\/span><\/br><\/br>Отсутствие метаданных, ошибки в коде, не оптимизирована скорость, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "АвтоСервис 150",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/autoservis150.ru\/",
+    "description": "<div><p class=\"MsoNormal\" style=\"line-height:normal\"><span style=\"font-size: 9pt; font-family: Arial, sans-serif; color: rgb(102, 102, 102); background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\">г. Сергиев\r\nПосад ул. Пограничная д. 2А<\/span><span style=\"font-size:9.0pt;\r\nfont-family:\"Arial\",\"sans-serif\";color:#666666\"><br>\r\n<span style=\"background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\">+7\r\n(916) 5 -11111-9<\/span><br>\r\n<span style=\"background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\">+7\r\n(496) 541-37-37<\/span><\/span><\/p><\/div><\/br><\/br>Отсутствие метаданных, не настроена ошибка 404, не оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Строй Доставка",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/stds.pro\/",
+    "description": "<p class=\"MsoNormal\" style=\"margin: 2.25pt 0cm 7.5pt; line-height: normal; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\"><span style=\"font-size:10.0pt;mso-bidi-font-size:13.5pt;font-family:\"Arial\",\"sans-serif\";\r\nmso-fareast-font-family:\"Times New Roman\";color:#383637;mso-bidi-font-weight:\r\nbold\">г.Сергиев-Посад, ул. Центральная 1-Б., <o:p><\/o:p><\/span><\/p>\r\n\r\n<p class=\"MsoNormal\" style=\"margin: 2.25pt 0cm 7.5pt; line-height: normal; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\"><span style=\"font-size:10.0pt;mso-bidi-font-size:13.5pt;font-family:\"Arial\",\"sans-serif\";\r\nmso-fareast-font-family:\"Times New Roman\";color:#383637;mso-bidi-font-weight:\r\nbold\">Тел.: 8(915)034-33-99 <o:p><\/o:p><\/span><\/p><\/br><\/br>Отсутствие метаданных, не полностью настроена ошибка 404, не полная оптимизация скорости загрузки, отсутствие мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Художественные изделия и игрушки, ЗАО",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.rus-dusha.ru",
+    "description": "г.Сергиев Посад, пр-т Красной Армии,136<br>тел. 540-22-07<br><\/br><\/br>Отсутствие метаданных, не полная настройка ошибки 404, не оптимизирована скорость загрузки, не оптимизирована мобильная версия<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Попутчик ТВ",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.poputchiktv.ru\/",
+    "description": "г.Сергиев Посад,ш.Ярославское,3б<br>тел. 542-74-04<br><\/br><\/br>отсутствие метаданных, не полностью оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Сурья",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/yoga-sp.ru\/",
+    "description": "Сергиев Посад, ул.Вознесенская, 103, оф. 40<br>тел.547-38-39<br><\/br><\/br>Отсутствие метаданных, не оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Снайпер",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/snipersb.ru\/",
+    "description": "г.Сергиев Посад, ул. Фестивальная, 10а<br>тел. 8903 202 69 00<br><\/br><\/br>Отсутствие метаданных, не настроена 404 ошибка, не оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Бастион",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/bastion-autoservice.ru",
+    "description": "<strong><span style=\"font-size: 12pt;\"><span style=\"font-family: \"Tahoma\";\"><\/span><\/span> <\/strong>Московская обл., Сергиево-Посадский р-н, Сергиев Посад, ул. Бероунская, 1А<br><strong> <\/strong>+7(926)084-36-48<br><\/br><\/br>Отсутствие метаданных, не полностью настроен ошибка 404, не оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Автомаг",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/automag-sp.ru",
+    "description": "<span style=\"color: rgb(0, 0, 0); font-size: 19px; font-family: \"Arial Black\";\">+7 (925) 150-10-50<\/span><\/br><\/br>Отсутствие метаданных, не оптимизирована скорость загрузки, не полностью настроена 404, не полная настройка мобильной версии(размер элементов)<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Промагро-РТИ",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/pa-rti.ru",
+    "description": " \r\n\t\t\t\tМосковская обл., Сергиево-Посадский р-н, Сергиев Посад, ул. Центральная, 1, оф. 20\r\n\t\t\t\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Тел.: 8(495) 508-79-52, +7 (496) 549-10-14<\/div><\/br><\/br>Есть страница с ошибкой 404, дубли метаданных, не оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Европа-Авто",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/evropa-auto.ru\/",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосковская обл., Сергиево-Посадский р-н, Сергиев Посад г., Скоропусковский микрорайон, промзона 34<br>+7 (929) 929-99-01<br><\/div><\/br><\/br>Отсутствие метаданных, не полная настройка 404, не полностью оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Aften",
+    "phone": "",
+    "email": "",
+    "url": " http:\/\/aften-mebel.ru",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосковская обл., Сергиев Посад г., пл. Вокзальная, 1б, ТЦ Сергиев Град, цокольный эт.\r\n\t\t\t<\/div>+7 (968) 412-12-77<\/div><\/br><\/br>Страницы с ошибками 404, дублирование метаданных, множество ошибок в коде, не оптимизирована скорость загрузки, не полностью оптимизирована мобильная версия(размер элементов)<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "ДРЕВ-ЭЛИТ",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/drevelit.ru\/",
+    "description": "<br><\/br><\/br>Дублирование метаданных, не настроена ошибка 404, не оптимизирована скорость загрузки, не полная настройка мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Клуб бережливых людей",
+    "phone": "",
+    "email": "",
+    "url": " http:\/\/obivka.me",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосква, Дмитровское ш., 167\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон:<\/div>\r\n\t\t\t<div class=\"right\">+7 (495) 508-53-97<\/div><\/br><\/br>Отсутствие метаданных, не оптимизирована скорость загрузки, не настроена ошибка 404, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "ВифСтрой",
+    "phone": "",
+    "email": "",
+    "url": " http:\/\/vifstroi.ru",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосковская обл., Сергиев Посад г., ул. Вифанская, 27\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Тел. +7 (49654) 1-53-87, +7 (49654) 1-42-64,<br><\/div><div class=\"right\"> +7 (49654) 7-86-26, +7 (49654) 1-42-92<\/div><\/br><\/br>Отсутствие и дублирование метаданных, не настроена ошибка 404, не оптимизирована скорость загрузки, нет мобильной версии <\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Дельта консалт",
+    "phone": "",
+    "email": "",
+    "url": " http:\/\/www.дельтаконсалтстрой.рф",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосковская обл., Сергиев Посад г., Новоугличское ш., 94а\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон: +7 (49654) 7-64-10<\/div><\/br><\/br>Отсутствие метаданных, не оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Домакс",
+    "phone": "",
+    "email": "",
+    "url": " http:\/\/www.domax-fahverk.ru",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосковская обл., Сергиев Посад г., просп. Красной Армии, 171\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон: 8 (800) 333-46-32 <br>8(495)662-99-15<br><div style=\"position: absolute; left: -99999px;\">7 (495) 662-99-15<p>Подробнее на сайте Домакс: <a href=\"http:\/\/www.skdomaks.ru\/kontakty\/\">http:\/\/www.skdomaks.ru\/kontakty\/<\/a> © skdomaks.ru<\/p><\/div><div style=\"position: absolute; left: -99999px;\">7 (495) 662-99-15<p>Подробнее на сайте Домакс: <a href=\"http:\/\/www.skdomaks.ru\/kontakty\/\">http:\/\/www.skdomaks.ru\/kontakty\/<\/a> © skdomaks.ru<\/p><\/div><div style=\"position: absolute; left: -99999px;\">7 (495) 662-99-15<p>Подробнее на сайте Домакс: <a href=\"http:\/\/www.skdomaks.ru\/kontakty\/\">http:\/\/www.skdomaks.ru\/kontakty\/<\/a> © skdomaks.ru<\/p><\/div><div style=\"position: absolute; left: -99999px;\">7 (495) 662-99-15<p>Подробнее на сайте Домакс: <a href=\"http:\/\/www.skdomaks.ru\/kontakty\/\">http:\/\/www.skdomaks.ru\/kontakty\/<\/a> © skdomaks.ru<\/p><p><br><\/p><\/div><\/div><\/br><\/br>Редирект на сайт http:\/\/www.skdomaks.ru\/ , отсутствие описаний, 404 ошибки, не оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "ИП Ваш Дом",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/vashdomsv.ru",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосковская обл., Сергиево-Посадский р-н, Сергиев Посад, просп. Красной Армии, 212а\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон: +7 (906) 553-84-83, +7 (920) 194-53-41<\/div><\/br><\/br>Отсутствие метаданных, ошибки 404, не оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "ДорСтрой-XXI",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/dorstroy21.ru",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tЦентральный федеральный округ, Москва, Зеленоград, №4807 пр-д, 1, стр. 1\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон: +7 (495) 988-83-93<\/div><\/br><\/br>Дублирование метаданных, не полная настройка ошибки 404, не оптимизирована скорость загрузки, нет мобильной версии <\/br>",
+    "loyalty": 0,
+    "status": "Звонили"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Инфо-Знак",
+    "phone": "",
+    "email": "",
+    "url": " http:\/\/www.info-znak.ru",
+    "description": "\r\n\t\t\t\tМосква, ул. Дубнинская, 75\r\n\t\t\t\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон: +7 (495) 485-18-54<\/div><\/br><\/br>Отсутствие метаданных, ошибки страниц с кодом 400, не настроена 404 ошибка, не оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "НПФ Инсор",
+    "phone": "",
+    "email": "",
+    "url": " http:\/\/www.insor.ru",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосковская обл., Щелковский р-н, Щелково г., Фряновское ш., 24и\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон: +7 (495) 916-35-29, +7 (496) 566-48-43<\/div><\/br><\/br>Отсутствие метаданных, не полная настройка ошибки 404, не оптимизирована скорость загрузки, не полная настройка мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Компания vicom",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/vicomsb.ru",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосковская обл., Сергиево-Посадский р-н, Сергиев Посад, ул. Матросова, 8\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон: +7 (903) 000-67-79<\/div><\/br><\/br>Дублирование метаданных, не оптимизирована скорость загрузки, нет мобильной версии<\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Симконтроль",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.simkontrol.ru",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосковская обл., Сергиев Посад г., ул. Вифанская, 29\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон: +7 (925) 281-81-71<\/div><\/br><\/br><span style=\"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\">Отсутствие метаданных, не настроена ошибка 404, страницы с ошибкой 404, не оптимизирована скорость загрузки, нет мобильной версии<\/span><\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Иксель Дженерал",
+    "phone": "",
+    "email": "",
+    "url": " http:\/\/www.glassxl.ru",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосква, ул. Вагоноремонтная, вл. 26\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон: +7 (925) 244-50-64<\/div><\/br><\/br><span style=\"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\">Отсутствие метаданных, не полная настройка ошибки 404, не оптимизирована скорость загрузки<\/span><\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Мосавтостекло",
+    "phone": "",
+    "email": "",
+    "url": " http:\/\/www.mosavtosteklo.ru",
+    "description": " \r\n\t\t\t\tМосковская обл., Долгопрудный г., ул. Горького, 1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон: +7 (499) 753-27-12, +7 (499) 753-27-09<\/div><\/br><\/br><span style=\"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\">Отсутствие метаданных, не полная настройка ошибки 404, не оптимизирована скорость загрузки, нет мобильной версии<\/span><\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Пласт",
+    "phone": "",
+    "email": "",
+    "url": " http:\/\/www.plastguard.ru",
+    "description": "<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосковская обл., Королев г., ул. Героев Курсантов, 28\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон: +7 (495) 648-47-06<\/div><\/br><\/br><span style=\"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\">Отсутствие метаданных, не оптимизирована скорость загрузки, не полная настройка мобильной версии<\/span><\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Веспер автоматика",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/vesper.ucoz.ru",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосква, ул. Михалковская, 63б, стр. 4\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон: +7 (916) 678-18-18<\/div><\/br><\/br><span style=\"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\">Отсутствие метаданных, не оптимизирована скорость загрузки, не полная настройка мобильной версии<\/span><\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "A&S",
+    "phone": "",
+    "email": "",
+    "url": " http:\/\/ais-sp.ru",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосковская обл., Сергиев Посад г., просп. Красной Армии, 180\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Тел.: +7 (496) 542-45-43<\/div><\/br><\/br>Сайт сейчас не работает&nbsp;<\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Aqater",
+    "phone": "",
+    "email": "",
+    "url": " http:\/\/куплю-аквариум.рф",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосковская обл., Щелковский р-н, Щелково, микрорайон Щелково-3, ул. Ленина, 1\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Тел.: +7 (925) 735-83-80<\/div><\/br><\/br><span style=\"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\">Дублирование метаданных, не полная настройка ошибки 404, не оптимизирована скорость загрузки, не полная настройка мобильной версии<\/span><\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Аквамир",
+    "phone": "",
+    "email": "",
+    "url": " http:\/\/www.bio-sphere.com",
+    "description": "<div class=\"right\">Москва, Гостиничный пр-д, 6, корп.2, центральный подъезд, оф. 102\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<div class=\"row\">&nbsp; +7(495) 517-48-01,<br><div class=\"right\">&nbsp; +7(495) 995-23-38,<br>&nbsp; +7(495) 542-41-92, <br>&nbsp; +7(495) 452-41-92<\/div>\r\n\t\t\t\r\n\t\t<\/div><br><\/br><\/br><\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Аквариумист",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/www.akvariymist.ru",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосква, Алтуфьевское ш., 96\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон: +7 (499) 908-49-05,<br>&nbsp;+7 (916) 825-26-49<\/div><\/br><\/br><\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Ветеринарная клиника Дружок",
+    "phone": "",
+    "email": "",
+    "url": " http:\/\/vet-dru.narod.ru",
+    "description": "\r\n\t\t\t\tМО, Сергиев Посад г., Скобяной пос., ул. Кирпичная, 2а\r\n\t\t\t\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон: +7 (496) 548-65-98, +7 (915) 292-28-77<\/div><\/br><\/br><\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Dog Style",
+    "phone": "",
+    "email": "",
+    "url": " http:\/\/gtyoet.narod2.ru",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосковская обл., Химки г., ул. Бабакина, 13\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон: +7 (916) 023-10-21<\/div><\/br><\/br><\/br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Grooming Кошек",
+    "phone": "",
+    "email": "",
+    "url": " http:\/\/grumcat.ru",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосковская обл., Щёлковский р-н, Щёлково, ул. Талсинская, 2\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон: +7 (929) 993-82-15<\/div><\/br><\/br><\/br>по сравнению с конкурентами дизайн отвратительный<br>",
+    "loyalty": 0,
+    "status": "Новый"
+  },
+  {
+    "type": "Юридическое лицо",
+    "name": "Арс медика",
+    "phone": "",
+    "email": "",
+    "url": "http:\/\/vetbibirevo.ru",
+    "description": "\r\n\t\t\t<div class=\"right\">\r\n\t\t\t\t\r\n\t\t\t\tМосква, Березовая аллея, 7б\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t<div class=\"left\">Телефон: +7 (499) 272-52-70<\/div><\/br><\/br><\/br>нет отзывов<br>",
+    "loyalty": 0,
+    "status": "Новый"
+  }
+]
