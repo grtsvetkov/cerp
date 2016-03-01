@@ -132,7 +132,7 @@ Template.clientCard.rendered = function () {
         /**
          * Календарик в блоке добавления события
          */
-        $('#clientCardAddEventDate').datepicker({
+        $('.date-picker').datepicker({
             dateFormat: 'dd.mm.yy',
             monthNames: ['Январь', 'Февраль', 'Март', 'Апрель',
                 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь',
@@ -146,7 +146,7 @@ Template.clientCard.rendered = function () {
         /**
          * Вывод времени в поле добавления события
          */
-        $('#clientCardAddEventTime').timepicker({
+        $('.date-picker-time').timepicker({
             minuteStep: 10,
             showSeconds: false,
             showMeridian: false
@@ -265,6 +265,38 @@ Template.clientCard.events({
     'change #clientCardAddEventFile': function(e, tpl) {
         FS.Utility.eachFile(e, function(file) {
             clientEventAddFile = file;
+        });
+    },
+
+
+    /**
+     * Кнопка "добавить новое напоминание"
+     */
+    'click #clientCardAddReminderButton': function (e, tpl) {
+
+        var form = $(tpl.find('#clientCardAddReminder'));
+
+        var paramObj = {};
+        $.each(form.serializeArray(), function(_, kv) {
+            paramObj[kv.name] = kv.value;
+        });
+
+        var _id = Router.current().params._id;
+
+        var data = {
+            date: moment(paramObj.clientCardAddReminderDate + ' ' + paramObj.clientCardAddReminderTime, 'DD.MM.YYYY HH:mm').valueOf(),
+            comment: paramObj.clientCardAddReminderComment
+        };
+
+        Meteor.call('client.addReminder', _id, data, function(e) {
+            $.gritter.add({
+                title: 'Напоминание для компании добавлено',
+                text: 'Для данной компании добавлено напоминание. В назначенное время придёт уведомление.',
+                class_name: 'gritter-info gritter-center',
+                time:3000
+            });
+
+            document.getElementById('clientCardAddReminderComment').value = '';
         });
     }
 

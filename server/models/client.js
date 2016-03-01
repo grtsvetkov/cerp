@@ -71,7 +71,7 @@ ClientModel = {
 
         var eventData = {
             type: 'clientEvent',
-            dt: data.date,
+            dt: new Date,
             data: {
                 client_id: _id,
                 comment: data.comment,
@@ -86,6 +86,20 @@ ClientModel = {
         }
 
         return EventModel.add(eventData);
+    },
+
+    addReminder: function(_id, data) {
+
+        var reminderData = {
+            type: 'clientReminder',
+            dt: data.date,
+            data: {
+                client_id: _id,
+                comment: data.comment
+            }
+        };
+
+        return ReminderModel.add(reminderData);
     }
 };
 
@@ -95,5 +109,6 @@ ClientModel = {
 Meteor.methods({
     'client.add': ClientModel.add,
     'client.update': ClientModel.update,
-    'client.addEvent': ClientModel.addEvent
+    'client.addEvent': ClientModel.addEvent, //Добавить новое событие для клиента
+    'client.addReminder': ClientModel.addReminder //Добавить новое напоминание для клиента
 });

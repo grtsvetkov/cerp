@@ -80,7 +80,7 @@
                                             </li>
 
                                             <li class="">
-                                                <a data-toggle="tab" href="#clientCardNotice">
+                                                <a data-toggle="tab" href="#clientCardAddReminder">
                                                     <i class="red ace-icon fa fa-calendar-o bigger-120"></i>
                                                     Напоминание
                                                 </a>
@@ -152,9 +152,61 @@
 
                                             </form>
 
-                                            <div id="clientCardNotice" class="tab-pane fade in">
-                                                <p>Данная функция в разработке</p>
-                                            </div>
+                                            <form id="clientCardAddReminder" class="tab-pane fade in">
+                                                <div class="col-xs-12 col-sm-4">
+                                                    <label class="control-label no-padding-right" for="clientCardAddReminderDate">Дата</label>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-11 no-padding-left">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                    <i class="ace-icon fa fa-calendar"></i>
+                                                                </span>
+                                                                <input type="text" class="col-xs-10 date-picker" id="clientCardAddReminderDate" name="clientCardAddReminderDate"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-4">
+                                                    <label class="control-label no-padding-right" for="clientCardAddReminderTime">Время</label>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-8 no-padding-left">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                    <i class="ace-icon fa fa-calendar"></i>
+                                                                </span>
+                                                                <input type="text" class="col-xs-10 date-picker-time" id="clientCardAddReminderTime" name="clientCardAddReminderTime"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-12 clearfix">
+                                                    <div class="space-8"></div>
+                                                    <label class="control-label no-padding-right" for="clientCardAddReminderComment">Комментарий</label>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-12 no-padding-left">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                    <i class="ace-icon fa fa-comment"></i>
+                                                                </span>
+                                                                <textarea placeholder="Напишите комментарий к событию" class="col-xs-10 col-sm-11" id="clientCardAddReminderComment" name="clientCardAddReminderComment"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-12 clearfix col-md-offset-4">
+                                                    <div class="space-4"></div>
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-sm btn-success no-radius" id="clientCardAddReminderButton">
+                                                            <i class="ace-icon fa fa-rss-square"></i>
+                                                            Добавить напоминание
+                                                        </button>
+                                                    </span>
+                                                </div>
+
+                                            </form>
 
                                             <div id="clientCardTask" class="tab-pane fade in">
                                                 <p>Данная функция недоступна</p>
