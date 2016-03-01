@@ -21,6 +21,13 @@ if (Meteor.isServer) {
          * Если необходимо - заполняем их начальными данными
          */
 
+        if (Client.find().count() == 0) {
+            var data_client = JSON.parse(Assets.getText('client.json'));
+            for (i in data_client) {
+                Client.insert(data_client[i]);
+            }
+            delete data_client;
+        }
 
         if (UserGroup.find().count() == 0) {
             var data_userGroup = JSON.parse(Assets.getText('userGroup.json'));
