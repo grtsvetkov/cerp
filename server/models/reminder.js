@@ -1,8 +1,8 @@
 ReminderModel = {
 
     /**
-     * Добавление напоминания
-     * @param data данные напоминания
+     * Р”РѕР±Р°РІР»РµРЅРёРµ РЅР°РїРѕРјРёРЅР°РЅРёСЏ
+     * @param data Р”Р°РЅРЅС‹Рµ РЅР°РїРѕРјРёРЅР°РЅРёСЏ
      * @returns {*}
      */
     add: function (data) {
@@ -14,8 +14,13 @@ ReminderModel = {
 
     tick: function() {
         _.each(Reminder.find({'dt': {$lt: new Date}, status: 0}).fetch(), function(item){
-            Reminder.update(item._id, {status: 1});
+            NoticeModel.add(item);
+            ReminderModel.remove(item._id);
         });
+    },
+
+    remove: function(_id) {
+        Reminder.remove(_id);
     }
 
 };
@@ -23,7 +28,7 @@ ReminderModel = {
 Meteor.setInterval(ReminderModel.tick, 30000);
 
 /**
- * Методы Event
+ * РњРµС‚РѕРґС‹ Reminder
  */
 Meteor.methods({
     'reminder.add': ReminderModel.add

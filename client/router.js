@@ -33,6 +33,12 @@ if (Meteor.isClient) {
             if(this.options.route.options.bodyClass) {
                 $('body').removeClass(this.options.route.options.bodyClass);
             }
+        },
+
+        waitOn: function() {
+            return [
+                Meteor.subscribe('userNotice')
+            ]
         }
 
     });

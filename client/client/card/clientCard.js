@@ -185,6 +185,18 @@ Template.clientCard.helpers({
 
 var clientEventAddFile;
 
+var clientAddEventCallbackFunction = function(e) {
+
+    document.getElementById('clientCardAddEventComment').value = '';
+
+    $.gritter.add({
+        title: 'Событие для компании добавлено',
+        text: 'Для данной компании добавлено событие.',
+        class_name: 'gritter-info gritter-center',
+        time:2000
+    });
+};
+
 Template.clientCard.events({
 
     /**
@@ -253,12 +265,12 @@ Template.clientCard.events({
                     size: blob.size
                 };
 
-                Meteor.call('client.addEvent', _id, data);
+                Meteor.call('client.addEvent', _id, data, clientAddEventCallbackFunction);
                 clientEventAddFile = null;
                 $(tpl.find('#clientCardAddEventFile')).ace_file_input('reset_input');
             });
         } else {
-            Meteor.call('client.addEvent', _id, data);
+            Meteor.call('client.addEvent', _id, data, clientAddEventCallbackFunction);
         }
     },
 

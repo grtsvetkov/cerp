@@ -90,10 +90,13 @@ ClientModel = {
 
     addReminder: function(_id, data) {
 
+        var client = Client.findOne(_id);
+
         var reminderData = {
             type: 'clientReminder',
             dt: data.date,
             data: {
+                client_name: client.name,
                 client_id: _id,
                 comment: data.comment
             }

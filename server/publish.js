@@ -14,6 +14,15 @@ Meteor.startup(function() {
     }); //Данные пользователей (для администратора)
 
 
+    /**
+     * NOTICE
+     */
+
+    Meteor.publish('userNotice', function () {
+        return Notice.find({'user_id': this.userId, status: 0});
+    }); //Уведомления пользователя
+
+
 
     /**
      * USERGROUP
@@ -46,4 +55,5 @@ Meteor.startup(function() {
     Meteor.publish('eventFile', function () {
         return FileCollections['event'].find();
     }); //Файлы в событиях
+
 });
