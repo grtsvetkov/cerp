@@ -1,11 +1,20 @@
 Template.notice.helpers({
-    'notices': function() {
+
+    'count': function() {
+        return Notice.find({'user_id': Meteor.userId()});
+    },
+
+    'alertItems': function() {
         return Notice.find({'user_id': Meteor.userId(), status: 0});
+    },
+
+    'items': function() {
+        return Notice.find({'user_id': Meteor.userId()});
     }
 });
 
 
-Template.noticeItem.rendered = function() {
+Template.noticeAlertItem.rendered = function() {
     var data = this.data;
 
     var gritter = {};
