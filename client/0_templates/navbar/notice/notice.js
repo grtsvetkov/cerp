@@ -19,6 +19,14 @@ Template.notice.helpers({
 });
 
 
+Template.notice.events({
+    'click #noticeDeleteAll': function() {
+        _.each(Notice.find({'user_id': Meteor.userId()}).fetch(), function(item){
+            Meteor.call('notice.delete', item._id);
+        })
+    }
+});
+
 Template.noticeAlertItem.rendered = function() {
     var data = this.data;
 
