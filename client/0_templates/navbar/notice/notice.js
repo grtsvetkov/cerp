@@ -1,7 +1,7 @@
 Template.notice.helpers({
 
     'count': function() {
-        return Notice.find({'user_id': Meteor.userId()});
+        return Notice.find({'user_id': Meteor.userId()}).count();
     },
 
     'alertItems': function() {
@@ -10,7 +10,12 @@ Template.notice.helpers({
 
     'items': function() {
         return Notice.find({'user_id': Meteor.userId()});
+    },
+
+    'itemDynamicTemplate': function () {
+        return 'noticeItem_' + this.type;
     }
+
 });
 
 

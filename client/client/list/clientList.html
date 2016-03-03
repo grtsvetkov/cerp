@@ -51,8 +51,12 @@
         </td>
         <td class="align-middle">{{ status }}</td>
         <td class="align-middle">{{ phone }}</td>
-        <td class="hidden-480 align-middle">{{ email }}</td>
-        <td class="align-middle">{{ url }}</td>
+        <td class="hidden-480 align-middle">
+            <a href="mailto:{{email}}">{{ email }}</a>
+        </td>
+        <td class="align-middle">
+            <a href="{{url}}" target="_blank">{{ url }}</a>
+        </td>
 
         <td class="hidden-480 center col-sm-1 align-middle">
             <div class="easy-pie-chart percentage" data-size="30" data-color="#ECCB71" data-percent="{{ loyalty }}">

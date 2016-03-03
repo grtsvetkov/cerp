@@ -19,15 +19,7 @@
                 <ul class="dropdown-menu dropdown-navbar navbar-pink">
                     {{#each items}}
                         <li>
-                            <a href="#">
-                                <div class="clearfix">
-                                    <span class="pull-left">
-                                        <i class="btn btn-xs no-hover btn-pink fa fa-comment"></i>
-                                        New Comments
-                                    </span>
-                                    <span class="pull-right badge badge-info">+12</span>
-                                </div>
-                            </a>
+                            {{> Template.dynamic template=itemDynamicTemplate}}
                         </li>
                     {{/each}}
                 </ul>
@@ -41,6 +33,18 @@
         </ul>
     </li>
 </template>
+
+<template name="noticeItem_clientReminder">
+    <a href="{{pathFor 'clientCard' _id=this.data.client_id}}">
+        <div class="clearfix">
+            <span class="pull-left">
+                <i class="btn btn-xs no-hover btn-pink fa fa-comment"></i>
+                Напоминаем вам о клиенте {{this.data.client_name}}
+            </span>
+        </div>
+    </a>
+</template>
+
 
 <template name="noticeAlertItem">
 </template>
