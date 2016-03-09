@@ -43,7 +43,8 @@ Template.noticeAlertItem.rendered = function() {
                 text: 'Напоминаем вам о клиенте "'+data.data.client_name+'"'
                 +'<br/>Комментарий:<br/>'+data.data.comment
                 +'<br/>' + link,
-                sticky: true,
+                sticky: false,
+                time: 4000,
                 class_name: 'gritter-info',
                 before_close: function(e, manual_close){
                     console.log(e);

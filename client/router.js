@@ -51,7 +51,12 @@ if (Meteor.isClient) {
     Router.route('/', {
         name: 'index',
         bodyClass: 'no-skin',
-        menuName: 'Главная'
+        menuName: 'Главная',
+        waitOn: function(){
+            return [
+                Meteor.subscribe('userReminder')
+            ];
+        }
     });
 
 
@@ -71,7 +76,8 @@ if (Meteor.isClient) {
         menuName: 'Список клиентов',
         waitOn: function(){
             return [
-                Meteor.subscribe('clientList')
+                Meteor.subscribe('clientList'),
+                Meteor.subscribe('allEvent')
             ];
         }
     });

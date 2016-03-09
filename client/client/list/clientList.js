@@ -53,7 +53,7 @@ Template.clientList.rendered = function () {
                     bAutoWidth: false,
                     "aoColumns": [
                         //{"bSortable": false},
-                        null, null, null, null, null, null,
+                        null, null, {"bSortable": false}, null, null, null, null,
                         {"bSortable": false}
                     ],
                     "aaSorting": [],
@@ -172,7 +172,7 @@ Template.clientList.rendered = function () {
         //ColVis extension
         var colvis = new $.fn.dataTable.ColVis(oTable1, {
             "buttonText": "<i class='fa fa-search'></i>",
-            "aiExclude": [0, 6],
+            "aiExclude": [0, 7],
             "bShowAll": true,
             //"bRestore": true,
             "sAlign": "right",
@@ -211,6 +211,33 @@ Template.clientList.rendered = function () {
 Template.clientList.helpers({
     'clientList': function() {
         return  Client.find().fetch();
+    }
+});
+
+Template.clientListItem.helpers({
+    'lastEvent': function(_id) {
+
+        var ev =  Event.find({'data.client_id': _id}, {sort: {'dt': -1}}).fetch()[0];
+
+        console.log(ev);
+
+        switch (ev.type) {
+            case 'clientAdd':
+                return 'Добавление карточки';
+                break;
+
+            case 'clientComment':
+                return 'Добавление комментария: "'+ev.data.text+'"';
+                break;
+
+            case 'clientEdit':
+                return 'Редактирование данных';
+                break;
+
+            case 'clientEvent':
+                return 'Добавление события. Статус: "'+ev.data.new_status+'". Комментарий: "'+ev.data.comment+'"';
+                break;
+        }
     }
 });
 

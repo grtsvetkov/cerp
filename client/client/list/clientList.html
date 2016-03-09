@@ -15,6 +15,7 @@
                     <tr>
                         <th>Название</th>
                         <th>Статус</th>
+                        <th>Последнее событие</th>
                         <th>Телефон</th>
                         <th class="hidden-480">E-mail</th>
 
@@ -50,6 +51,7 @@
             <a href="{{pathFor 'clientCard' _id=this._id}}">{{ name }}</a>
         </td>
         <td class="align-middle">{{ status }}</td>
+        <td class="align-middle">{{ lastEvent this._id }}</td>
         <td class="align-middle">{{ phone }}</td>
         <td class="hidden-480 align-middle">
             <a href="mailto:{{email}}">{{ email }}</a>

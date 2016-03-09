@@ -25,6 +25,16 @@ Meteor.startup(function() {
 
 
     /**
+     * REMINDER
+     */
+
+    Meteor.publish('userReminder', function () {
+        return Reminder.find({'user_id': this.userId, status: 0});
+    }); //Уведомления пользователя
+
+
+
+    /**
      * USERGROUP
      */
 
@@ -47,6 +57,10 @@ Meteor.startup(function() {
     /**
      * EVENT
      */
+
+    Meteor.publish('allEvent', function () {
+        return Event.find();
+    }); //Все события
 
     Meteor.publish('clientEvent', function (_id) {
         return Event.find({'data.client_id':_id});
