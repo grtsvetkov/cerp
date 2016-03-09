@@ -149,6 +149,7 @@ Template.clientAdd.events({
             type: paramObj.add_client_type == 'on' ? 'Юридическое лицо' : 'Физическое лицо',
             name: paramObj.add_client_name,
             phone: paramObj.add_client_phone,
+            address: paramObj.add_client_address,
             email: paramObj.add_client_email,
             url: paramObj.add_client_url,
             loyalty: paramObj.add_client_loyalty,

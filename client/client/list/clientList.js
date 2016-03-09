@@ -28,22 +28,6 @@ Template.clientList.rendered = function () {
 
     jQuery(function ($) {
 
-        $('.easy-pie-chart.percentage').each(function(){
-            var $box = $(this).closest('.infobox');
-            var barColor = $(this).data('color') || (!$box.hasClass('infobox-dark') ? $box.css('color') : 'rgba(255,255,255,0.95)');
-            var trackColor = barColor == 'rgba(255,255,255,0.95)' ? 'rgba(255,255,255,0.25)' : '#E2E2E2';
-            var size = parseInt($(this).data('size')) || 50;
-            $(this).easyPieChart({
-                barColor: barColor,
-                trackColor: trackColor,
-                scaleColor: false,
-                lineCap: 'butt',
-                lineWidth: parseInt(size/10),
-                animate: /msie\s*(8|7|6)/.test(navigator.userAgent.toLowerCase()) ? false : 1000,
-                size: size
-            });
-        });
-
         //initiate dataTables plugin
         oTable1 =
             $('#dynamic-table')
@@ -53,7 +37,7 @@ Template.clientList.rendered = function () {
                     bAutoWidth: false,
                     "aoColumns": [
                         //{"bSortable": false},
-                        null, null, {"bSortable": false}, null, null, null, null,
+                        null, null, {"bSortable": false}, null, null, null,
                         {"bSortable": false}
                     ],
                     "aaSorting": [],
@@ -172,7 +156,7 @@ Template.clientList.rendered = function () {
         //ColVis extension
         var colvis = new $.fn.dataTable.ColVis(oTable1, {
             "buttonText": "<i class='fa fa-search'></i>",
-            "aiExclude": [0, 7],
+            "aiExclude": [0, 6],
             "bShowAll": true,
             //"bRestore": true,
             "sAlign": "right",
@@ -244,20 +228,5 @@ Template.clientListItem.helpers({
 Template.clientListItem.rendered = function() {
     if(oTable1) {
         oTable1.api().row.add($(this.firstNode));
-        $('.easy-pie-chart.percentage').each(function(){
-            var $box = $(this).closest('.infobox');
-            var barColor = $(this).data('color') || (!$box.hasClass('infobox-dark') ? $box.css('color') : 'rgba(255,255,255,0.95)');
-            var trackColor = barColor == 'rgba(255,255,255,0.95)' ? 'rgba(255,255,255,0.25)' : '#E2E2E2';
-            var size = parseInt($(this).data('size')) || 50;
-            $(this).easyPieChart({
-                barColor: barColor,
-                trackColor: trackColor,
-                scaleColor: false,
-                lineCap: 'butt',
-                lineWidth: parseInt(size/10),
-                animate: /msie\s*(8|7|6)/.test(navigator.userAgent.toLowerCase()) ? false : 1000,
-                size: size
-            });
-        });
     }
 };

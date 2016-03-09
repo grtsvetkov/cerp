@@ -1,0 +1,51 @@
+<template name="widgetNotice">
+    <div class="widget-box">
+        <div class="widget-header">
+            <h4 class="widget-title lighter smaller">
+                <i class="ace-icon fa fa-bell blue"></i>
+                Уведомления
+            </h4>
+        </div>
+        <div class="widget-body">
+            <div class="widget-main no-padding">
+                <div id="widgetNoticeList">
+                    <div class="space-10"></div>
+                    {{! Эта ul`ка - спец-хак-поебня. Спасибо метеору, пламенный привет! }}
+                    <ul class="interfaceItems">
+                        {{#each widgetNoticeItems}}
+                        {{>widgetNoticeItem}}
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="widgetNoticeItem">
+    <div class="itemdiv commentdiv">
+        <div class="body no-margin-left">
+            <div class="time">
+                <i class="ace-icon fa fa-clock-o"></i>
+                <span class="green">{{ timeString dt }}</span>
+            </div>
+            {{> Template.dynamic template=widgetNoticeDynamicTemplate}}
+        </div>
+        <div class="tools">
+            <div class="action-buttons bigger-125">
+                <a href="#" class="removeNotice">
+                    <i class="ace-icon fa fa-trash-o red"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="widgetNotice_clientReminder">
+    <div class="name">
+        <a href="{{pathFor 'clientCard' _id=data.client_id}}">{{ data.client_name }}</a>
+    </div>
+    <div class="text">
+        {{ data.comment }}
+    </div>
+</template>
