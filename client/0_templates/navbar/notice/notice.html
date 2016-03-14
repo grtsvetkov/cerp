@@ -1,0 +1,50 @@
+<template name="notice">
+
+    <li class="purple">
+        <audio id="noticeAudio" src="/audio/notice.mp3"></audio>
+        {{#each alertItems}}
+            {{>noticeAlertItem}}
+        {{/each}}
+        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+            <i class="ace-icon fa fa-bell icon-animated-bell"></i>
+            <span class="badge badge-important">{{count}}</span>
+        </a>
+
+        <ul class="dropdown-menu-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
+            <li class="dropdown-header">
+                <i class="ace-icon fa fa-exclamation-triangle"></i>
+                Уведомлений: {{count}}
+            </li>
+            <li class="dropdown-content">
+                <ul class="dropdown-menu dropdown-navbar navbar-pink">
+                    {{#each items}}
+                        <li>
+                            {{> Template.dynamic template=itemDynamicTemplate}}
+                        </li>
+                    {{/each}}
+                </ul>
+            </li>
+            <li class="dropdown-footer">
+                <a id="noticeDeleteAll" href="#">
+                    Удалить все уведомления
+                    <i class="ace-icon fa fa-arrow-right"></i>
+                </a>
+            </li>
+        </ul>
+    </li>
+</template>
+
+<template name="noticeItem_clientReminder">
+    <a href="{{pathFor 'clientCard' _id=this.data.client_id}}">
+        <div class="clearfix">
+            <span class="pull-left">
+                <i class="btn btn-xs no-hover btn-pink fa fa-comment"></i>
+                Напоминаем вам о клиенте {{this.data.client_name}}
+            </span>
+        </div>
+    </a>
+</template>
+
+
+<template name="noticeAlertItem">
+</template>

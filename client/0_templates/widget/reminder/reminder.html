@@ -1,0 +1,44 @@
+<template name="widgetReminder">
+    <div class="widget-box">
+        <div class="widget-header">
+            <h4 class="widget-title lighter smaller">
+                <i class="ace-icon fa fa-calendar-o blue"></i>
+                Напоминания
+            </h4>
+        </div>
+        <div class="widget-body">
+            <div class="widget-main no-padding">
+                <div id="widgetReminderList">
+                    <div class="space-10"></div>
+                    {{! Эта ul`ка - спец-хак-поебня. Спасибо метеору, пламенный привет! }}
+                    <ul class="interfaceItems">
+                        {{#each widgetReminderItems}}
+                            {{>widgetReminderItem}}
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="widgetReminderItem">
+    <div class="itemdiv commentdiv">
+        <div class="body no-margin-left">
+            <div class="time">
+                <i class="ace-icon fa fa-clock-o"></i>
+                <span class="green">{{ timeString dt }}</span>
+            </div>
+            {{> Template.dynamic template=widgetReminderDynamicTemplate}}
+        </div>
+    </div>
+</template>
+
+<template name="widgetReminder_clientReminder">
+    <div class="name">
+        <a href="{{pathFor 'clientCard' _id=data.client_id}}">{{ data.client_name }}</a>
+    </div>
+    <div class="text">
+        {{ data.comment }}
+    </div>
+</template>

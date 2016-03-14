@@ -1,11 +1,33 @@
 Template.notice.helpers({
-    'notices': function() {
+
+    'count': function() {
+        return Notice.find({'user_id': Meteor.userId()}).count();
+    },
+
+    'alertItems': function() {
         return Notice.find({'user_id': Meteor.userId(), status: 0});
+    },
+
+    'items': function() {
+        return Notice.find({'user_id': Meteor.userId()});
+    },
+
+    'itemDynamicTemplate': function () {
+        return 'noticeItem_' + this.type;
     }
+
 });
 
 
-Template.noticeItem.rendered = function() {
+Template.notice.events({
+    'click #noticeDeleteAll': function() {
+        _.each(Notice.find({'user_id': Meteor.userId()}).fetch(), function(item){
+            Meteor.call('notice.delete', item._id);
+        })
+    }
+});
+
+Template.noticeAlertItem.rendered = function() {
     var data = this.data;
 
     var gritter = {};
@@ -21,7 +43,8 @@ Template.noticeItem.rendered = function() {
                 text: 'Напоминаем вам о клиенте "'+data.data.client_name+'"'
                 +'<br/>Комментарий:<br/>'+data.data.comment
                 +'<br/>' + link,
-                sticky: true,
+                sticky: false,
+                time: 4000,
                 class_name: 'gritter-info',
                 before_close: function(e, manual_close){
                     console.log(e);

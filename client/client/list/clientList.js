@@ -28,22 +28,6 @@ Template.clientList.rendered = function () {
 
     jQuery(function ($) {
 
-        $('.easy-pie-chart.percentage').each(function(){
-            var $box = $(this).closest('.infobox');
-            var barColor = $(this).data('color') || (!$box.hasClass('infobox-dark') ? $box.css('color') : 'rgba(255,255,255,0.95)');
-            var trackColor = barColor == 'rgba(255,255,255,0.95)' ? 'rgba(255,255,255,0.25)' : '#E2E2E2';
-            var size = parseInt($(this).data('size')) || 50;
-            $(this).easyPieChart({
-                barColor: barColor,
-                trackColor: trackColor,
-                scaleColor: false,
-                lineCap: 'butt',
-                lineWidth: parseInt(size/10),
-                animate: /msie\s*(8|7|6)/.test(navigator.userAgent.toLowerCase()) ? false : 1000,
-                size: size
-            });
-        });
-
         //initiate dataTables plugin
         oTable1 =
             $('#dynamic-table')
@@ -53,7 +37,7 @@ Template.clientList.rendered = function () {
                     bAutoWidth: false,
                     "aoColumns": [
                         //{"bSortable": false},
-                        null, null, null, null, null, null,
+                        null, null, {"bSortable": false}, null, null, null,
                         {"bSortable": false}
                     ],
                     "aaSorting": [],
@@ -214,23 +198,35 @@ Template.clientList.helpers({
     }
 });
 
+Template.clientListItem.helpers({
+    'lastEvent': function(_id) {
+
+        var ev =  Event.find({'data.client_id': _id}, {sort: {'dt': -1}}).fetch()[0];
+
+        console.log(ev);
+
+        switch (ev.type) {
+            case 'clientAdd':
+                return 'Добавление карточки';
+                break;
+
+            case 'clientComment':
+                return 'Добавление комментария: "'+ev.data.text+'"';
+                break;
+
+            case 'clientEdit':
+                return 'Редактирование данных';
+                break;
+
+            case 'clientEvent':
+                return 'Добавление события. Статус: "'+ev.data.new_status+'". Комментарий: "'+ev.data.comment+'"';
+                break;
+        }
+    }
+});
+
 Template.clientListItem.rendered = function() {
     if(oTable1) {
         oTable1.api().row.add($(this.firstNode));
-        $('.easy-pie-chart.percentage').each(function(){
-            var $box = $(this).closest('.infobox');
-            var barColor = $(this).data('color') || (!$box.hasClass('infobox-dark') ? $box.css('color') : 'rgba(255,255,255,0.95)');
-            var trackColor = barColor == 'rgba(255,255,255,0.95)' ? 'rgba(255,255,255,0.25)' : '#E2E2E2';
-            var size = parseInt($(this).data('size')) || 50;
-            $(this).easyPieChart({
-                barColor: barColor,
-                trackColor: trackColor,
-                scaleColor: false,
-                lineCap: 'butt',
-                lineWidth: parseInt(size/10),
-                animate: /msie\s*(8|7|6)/.test(navigator.userAgent.toLowerCase()) ? false : 1000,
-                size: size
-            });
-        });
     }
 };
