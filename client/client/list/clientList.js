@@ -37,7 +37,7 @@ Template.clientList.rendered = function () {
                     bAutoWidth: false,
                     "aoColumns": [
                         //{"bSortable": false},
-                        null, null, {"bSortable": false}, null, null, null,
+                        null, null, {"bSortable": false}, null, null, null, null,
                         {"bSortable": false}
                     ],
                     "aaSorting": [],
@@ -203,8 +203,6 @@ Template.clientListItem.helpers({
 
         var ev =  Event.find({'data.client_id': _id}, {sort: {'dt': -1}}).fetch()[0];
 
-        console.log(ev);
-
         switch (ev.type) {
             case 'clientAdd':
                 return 'Добавление карточки';
@@ -222,7 +220,14 @@ Template.clientListItem.helpers({
                 return 'Добавление события. Статус: "'+ev.data.new_status+'". Комментарий: "'+ev.data.comment+'"';
                 break;
         }
+    },
+
+    'lastEvent_date': function(_id) {
+
+        return moment(Event.find({'data.client_id': _id}, {sort: {'dt': -1}}).fetch()[0].dt).format('DD.MM.YYYY hh:mm');
     }
+
+
 });
 
 Template.clientListItem.rendered = function() {
