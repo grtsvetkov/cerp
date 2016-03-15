@@ -82,6 +82,16 @@ Template.clientList.rendered = function () {
                 .dataTable({
                     language: rusLng,
                     bAutoWidth: false,
+                    "columns": [
+                        null,
+                        null,
+                        { "width": "20%" },
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                    ],
                     columnDefs: [
                         null, null, null, { type: 'date-eu', targets: 0 }, null, null, null, null
                     ],
@@ -249,7 +259,13 @@ Template.clientList.helpers({
 Template.clientListItem.helpers({
     'lastEvent': function(_id) {
 
-        var ev =  Event.find({'data.client_id': _id}, {sort: {'dt': -1}}).fetch()[0];
+        var ev =  Event.find({'data.client_id': _id}, {sort: {'dt': -1}}).fetch();
+
+        if(!ev || !ev[0]) {
+            return '';
+        } else {
+            ev = ev[0];
+        }
 
         switch (ev.type) {
             case 'clientAdd':
@@ -257,7 +273,7 @@ Template.clientListItem.helpers({
                 break;
 
             case 'clientComment':
-                return 'Добавление комментария: "'+ev.data.text+'"';
+                return 'Добавление комментария: "' + ev.data.text + '"';
                 break;
 
             case 'clientEdit':
@@ -265,14 +281,22 @@ Template.clientListItem.helpers({
                 break;
 
             case 'clientEvent':
-                return 'Добавление события. Статус: "'+ev.data.new_status+'". Комментарий: "'+ev.data.comment+'"';
+                return 'Добавление события. Статус: "' + ev.data.new_status + '". Комментарий: "' + ev.data.comment + '"';
                 break;
         }
     },
 
     'lastEventDate': function(_id) {
 
-        return moment(Event.find({'data.client_id': _id}, {sort: {'dt': -1}}).fetch()[0].dt).format('DD.MM.YYYY');
+        var ev = Event.find({'data.client_id': _id}, {sort: {'dt': -1}}).fetch();
+
+        if(!ev || !ev[0]) {
+            return '';
+        } else {
+            ev = ev[0];
+        }
+
+        return moment(ev.dt).format('DD.MM.YYYY');
     }
 
 
