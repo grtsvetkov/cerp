@@ -40,7 +40,7 @@ Template.clientList.rendered = function () {
                 }
 
                 var year;
-                var eu_date = date.split(/[\.\-\/]/);
+                var eu_date = date.split('.');
 
                 /*year (optional)*/
                 if ( eu_date[2] ) {
@@ -82,18 +82,8 @@ Template.clientList.rendered = function () {
                 .dataTable({
                     language: rusLng,
                     bAutoWidth: false,
-                    "columns": [
-                        null,
-                        null,
-                        { "width": "20%" },
-                        null,
-                        null,
-                        null,
-                        null,
-                        null
-                    ],
                     columnDefs: [
-                        null, null, null, { type: 'date-eu', targets: 0 }, null, null, null, null
+                        {targets: 0}, {targets: 0}, {targets: 0}, { type: 'date-eu', targets: 0 }, {targets: 0}, {targets: 0}, {targets: 0}, {targets: 0}
                     ],
                     "aoColumns": [
                         null, null, null, null, null, null, null, {"bSortable": false}
