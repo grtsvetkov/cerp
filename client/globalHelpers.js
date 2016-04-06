@@ -17,8 +17,8 @@ Template.registerHelper('timeAgo', function(dt, update){
     return moment(dt).fromNow();
 });
 
-Template.registerHelper('timeString', function(dt){
-    return moment(dt).format('DD.MM.YYYY');
+Template.registerHelper('timeString', function(dt, withTime){
+    return moment(dt).format(withTime !== undefined ? 'DD.MM.YYYY HH:mm' :'DD.MM.YYYY');
 });
 
 Template.registerHelper('userProfile', function(uID, params){

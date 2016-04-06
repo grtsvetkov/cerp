@@ -4,7 +4,8 @@ Template.sidebar.helpers({
 
         return [
             {name: 'index', text: 'Главная', icon: 'fa-tachometer'},
-            {name: 'clientList', text: 'Список клиентов', icon: 'fa-list'},
+            {name: 'taskList', text: 'Задачи', icon: 'fa-tasks'},
+            {name: 'clientList', text: 'Холодные клиенты', icon: 'fa-list'},
             {name: 'clientAdd', text: 'Добавить клиента', icon: 'fa-file-o'}
         ]
     }

@@ -61,6 +61,20 @@ if (Meteor.isClient) {
 
 
     /**
+     * Задачи
+     */
+    Router.route('/task/list', {
+        name: 'taskList',
+        bodyClass: 'no-skin',
+        menuName: 'Задачи',
+        waitOn: function(){
+            return [
+                Meteor.subscribe('clientList')
+            ];
+        }
+    });
+
+    /**
      * Клиенты
      */
 

@@ -242,7 +242,7 @@ Template.clientList.rendered = function () {
 
 Template.clientList.helpers({
     'clientList': function() {
-        return  Client.find().fetch();
+        return  Client.find( { status: { $nin: [ 'Клиент', 'Архив' ] } }).fetch();
     }
 });
 
